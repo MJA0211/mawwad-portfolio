@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="Text walkthrough of the FailureLab demo video." />
+    <meta name="theme-color" content="#0b0e12" />
+    <title>FailureLab demo walkthrough | Muhammed Awwad</title>
+    <link rel="icon" href="/favicon.svg" />
+    <link rel="stylesheet" href="/videos/transcript.css" />
+  </head>
+  <body>
+    <main class="wrap transcript">
+      <a class="text-link" href="/#failurelab">← Back to FailureLab</a>
+      <h1>FailureLab demo walkthrough</h1>
+      <p>
+        This silent walkthrough uses project-owned synthetic incidents and the deterministic
+        baseline engine. The browser experiments are recorded executions. This recording does not
+        demonstrate model-provider diagnosis.
+      </p>
+      <a class="text-link" href="/videos/failurelab-demo.webm">Open the recorded demo ↗</a>
+      <ol>
+        <li>
+          <time>00:00</time>
+          <p>
+            The investigation list contains four owned incidents, including one with insufficient
+            evidence.
+          </p>
+        </li>
+        <li>
+          <time>00:04</time>
+          <p>
+            An investigation finds that an overlay intercepts a checkout click. The hypothesis links
+            to retained logs, DOM evidence, and a source diff.
+          </p>
+        </li>
+        <li>
+          <time>00:09</time>
+          <p>The evidence view opens the source log that records intercepted pointer events.</p>
+        </li>
+        <li>
+          <time>00:13</time>
+          <p>
+            The experiment compares three failing baseline runs with three passing intervention runs
+            after removing the overlay.
+          </p>
+        </li>
+        <li>
+          <time>00:18</time>
+          <p>
+            The reviewer records that support is limited to this owned fixture, then saves the note.
+          </p>
+        </li>
+        <li>
+          <time>00:23</time>
+          <p>
+            A separate incident lacks diagnostic artifacts. Its result remains inconclusive and no
+            experiment is reported.
+          </p>
+        </li>
+      </ol>
+      <a class="text-link" href="/#failurelab-case-study">Read the engineering notes →</a>
+    </main>
+  </body>
+</html>

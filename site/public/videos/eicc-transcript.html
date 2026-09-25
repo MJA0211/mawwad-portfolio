@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="Text walkthrough of the EICC demo video." />
+    <meta name="theme-color" content="#0b0e12" />
+    <title>EICC demo walkthrough | Muhammed Awwad</title>
+    <link rel="icon" href="/favicon.svg" />
+    <link rel="stylesheet" href="/videos/transcript.css" />
+  </head>
+  <body>
+    <main class="wrap transcript">
+      <a class="text-link" href="/#eicc">← Back to EICC</a>
+      <h1>EICC demo walkthrough</h1>
+      <p>
+        This silent recording follows a SOAP contract failure through correction, retesting,
+        acceptance, and a fictional release. All organizations and approvals are fictional. The
+        opening Northstar tour uses seeded records; qualification outcomes are created during the
+        recording. Release transitions stay within the local demonstration.
+      </p>
+      <a class="text-link" href="/videos/eicc-demo.mp4">Open the recorded demo ↗</a>
+      <ol>
+        <li>
+          <time>00:00</time>
+          <p>
+            Welcome to EICC: A recorded walkthrough of the redesigned app. All organizations,
+            records, and approvals are fictional.
+          </p>
+        </li>
+        <li>
+          <time>00:05</time>
+          <p>
+            Project overview: Coverage, test results, and release readiness are calculated from
+            persisted Northstar records.
+          </p>
+        </li>
+        <li>
+          <time>00:17</time>
+          <p>
+            Dark theme: The same workspace, with a dark slate palette and accessible semantic status
+            colors.
+          </p>
+        </li>
+        <li>
+          <time>00:22</time>
+          <p>
+            Requirements and traceability: Business needs connect to functional and technical
+            requirements, integrations, tests, and release scope.
+          </p>
+        </li>
+        <li>
+          <time>00:35</time>
+          <p>
+            Integration catalog: Inspect system boundaries, REST and SOAP contracts, mappings, and
+            connected delivery evidence.
+          </p>
+        </li>
+        <li>
+          <time>00:40</time>
+          <p>
+            Explainable release gates: The Northstar pilot remains blocked. Every failed gate
+            identifies the evidence or work still required.
+          </p>
+        </li>
+        <li>
+          <time>00:48</time>
+          <p>
+            Run a real SOAP test: In a separate qualification project, submit integer case ID 42 to
+            a contract that requires an XML string.
+          </p>
+        </li>
+        <li>
+          <time>00:53</time>
+          <p>
+            Inspect the failure: The captured request sends xsd:int. The local SOAP service rejects
+            it because case_id must be xsd:string.
+          </p>
+        </li>
+        <li>
+          <time>01:00</time>
+          <p>
+            Investigate a linked defect: Create the defect from the failed execution, then record
+            the root cause and the intended correction.
+          </p>
+        </li>
+        <li>
+          <time>01:11</time>
+          <p>
+            Correct the source mapping: Change the case_id transformation from identity to
+            to_string. The test payload remains the integer 42.
+          </p>
+        </li>
+        <li>
+          <time>01:24</time>
+          <p>
+            Retest and retain the evidence: The corrected mapping sends xsd:string and returns HTTP
+            200. The earlier failure remains in execution history.
+          </p>
+        </li>
+        <li>
+          <time>01:38</time>
+          <p>
+            Close the evidence loop: Resolution requires investigation details and a later passing
+            retest against the current contract.
+          </p>
+        </li>
+        <li>
+          <time>01:42</time>
+          <p>
+            Complete the linked requirements: Complete the reviewed business, functional, and
+            technical requirements after the contract has passed qualification.
+          </p>
+        </li>
+        <li>
+          <time>01:53</time>
+          <p>
+            Record acceptance evidence: The case operator verifies the current SOAP result and
+            attaches the retained request and response.
+          </p>
+        </li>
+        <li>
+          <time>02:07</time>
+          <p>
+            Record stakeholder sign-off: Approval identifies both the represented fictional
+            stakeholder and the authenticated demo actor.
+          </p>
+        </li>
+        <li>
+          <time>02:15</time>
+          <p>
+            Assess and approve the change: Record impact from stored relationships before approval;
+            validation checks the current passing test evidence.
+          </p>
+        </li>
+        <li>
+          <time>02:42</time>
+          <p>
+            Verify every release gate: Requirements, current tests, acceptance, defects, change
+            validation, deployment notes, and rollback all satisfy the gates.
+          </p>
+        </li>
+        <li>
+          <time>02:51</time>
+          <p>
+            Complete the fictional release: Authorized transitions record Planned, Ready, Deployed,
+            and Completed. This does not deploy external software.
+          </p>
+        </li>
+        <li>
+          <time>03:08</time>
+          <p>
+            Generate the delivery document: Release notes are a versioned snapshot generated from
+            the project's stored scope, deployment plan, and readiness.
+          </p>
+        </li>
+        <li>
+          <time>03:16</time>
+          <p>
+            A connected delivery record: The business-to-technical chain now has passing tests,
+            accepted UAT, a closed defect, and a completed release.
+          </p>
+        </li>
+      </ol>
+      <a class="text-link" href="/#eicc-case-study">Read the engineering notes →</a>
+    </main>
+  </body>
+</html>

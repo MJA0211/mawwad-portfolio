@@ -1,0 +1,1135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0b0e12" />
+    <title>Muhammed Awwad | Software Engineer</title>
+    <meta
+      name="description"
+      content="Software engineer and University of Maryland CS graduate. Explore my work on vehicle valuation, CI failure investigation, and enterprise integration workflows."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Muhammed Awwad | Software Engineer" />
+    <meta
+      property="og:description"
+      content="AutoValue AI, FailureLab, and EICC: three active engineering projects in machine learning, developer tools, and integration workflows."
+    />
+    <meta property="og:image" content="{{social-image}}" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Muhammed Awwad. Software engineer working with AI, data, and automation."
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Muhammed Awwad | Software Engineer" />
+    <meta
+      name="twitter:description"
+      content="A closer look at AutoValue AI, FailureLab, and Enterprise Integration Control Center."
+    />
+    <meta name="twitter:image" content="{{social-image}}" />
+    {{canonical}}
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link
+      rel="preload"
+      as="image"
+      href="/images/autovalue-video-poster.webp"
+      fetchpriority="high"
+    />
+    <link
+      rel="preload"
+      href="/fonts/ibm-plex-mono-latin.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <script type="module" src="/main.ts"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="signal-field" aria-hidden="true">
+      <svg viewBox="0 0 1440 680" preserveAspectRatio="xMidYMin slice">
+        <path
+          d="M0,48.0 L8,51.9 L16,53.8 L24,53.2 L32,51.3 L40,50.0 L48,50.6 L56,52.4 L64,39.6 L72,72.6 L80,41.2 L88,45.0 L96,42.3 L104,42.1 L112,43.9 L120,45.7 L128,45.9 L136,44.5 L144,42.9 L152,43.1 L160,45.8 L168,49.9 L176,53.3 L184,54.4 L192,53.0 L200,50.9 L208,49.9 L216,50.7 L224,52.4 L232,53.0 L240,51.1 L248,33.3 L256,63.4 L264,33.4 L272,42.1 L280,44.3 L288,46.0 L296,45.9 L304,44.4 L312,43.3 L320,44.3 L328,47.6 L336,51.7 L344,54.4 L352,54.5 L360,52.6 L368,50.4 L376,49.7 L384,50.8 L392,52.2 L400,52.0 L408,49.5 L416,45.4 L424,42.0 L432,27.0 L440,62.5 L448,36.9 L456,46.4 L464,45.9 L472,44.5 L480,44.0 L488,45.7 L496,49.4 L504,53.3 L512,55.2 L520,54.4 L528,51.9 L536,49.8 L544,49.5 L552,50.7 L560,51.7 L568,50.8 L576,47.7 L584,43.7 L592,41.0 L600,41.0 L608,43.1 L616,31.7 L624,66.8 L632,38.1 L640,44.8 L648,44.9 L656,47.3 L664,51.2 L672,54.5 L680,55.5 L688,53.8 L696,51.1 L704,49.2 L712,49.2 L720,50.5 L728,51.0 L736,49.5 L744,45.9 L752,42.2 L760,40.4 L768,41.3 L776,44.0 L784,46.5 L792,47.2 L800,32.3 L808,65.3 L816,38.0 L824,49.0 L832,52.8 L840,55.4 L848,55.4 L856,53.0 L864,50.1 L872,48.6 L880,49.0 L888,50.1 L896,50.1 L904,48.0 L912,44.3 L920,41.1 L928,40.2 L936,42.0 L944,45.1 L952,47.4 L960,47.7 L968,46.6 L976,46.0 L984,33.3 L992,70.6 L1000,46.2 L1008,55.9 L1016,54.8 L1024,51.9 L1032,49.0 L1040,47.9 L1048,48.6 L1056,49.6 L1064,49.1 L1072,46.4 L1080,42.8 L1088,40.3 L1096,40.5 L1104,43.1 L1112,46.3 L1120,48.2 L1128,48.1 L1136,47.0 L1144,46.8 L1152,48.7 L1160,52.1 L1168,41.2 L1176,75.9 L1184,45.9 L1192,50.6 L1200,48.0 L1208,47.4 L1216,48.3 L1224,49.0 L1232,47.9 L1240,45.0 L1248,41.6 L1256,40.0 L1264,41.2 L1272,44.4 L1280,47.6 L1288,49.0 L1296,48.5 L1304,47.4 L1312,47.7 L1320,50.1 L1328,53.4 L1336,55.8 L1344,55.5 L1352,38.7 L1360,69.2 L1368,38.9 L1376,46.8 L1384,47.9 L1392,48.3 L1400,46.7 L1408,43.6 L1416,40.8 L1424,40.2 L1432,42.3 L1440,45.9"
+        />
+        <path
+          d="M0,125.3 L8,125.8 L16,123.6 L24,120.3 L32,117.8 L40,117.4 L48,118.4 L56,119.0 L64,103.8 L72,134.6 L80,103.4 L88,110.0 L96,111.4 L104,114.7 L112,117.8 L120,119.0 L128,118.3 L136,117.3 L144,117.8 L152,120.3 L160,123.7 L168,125.9 L176,125.3 L184,122.4 L192,118.9 L200,116.9 L208,117.0 L216,118.1 L224,118.3 L232,116.5 L240,113.3 L248,96.6 L256,130.2 L264,104.6 L272,116.2 L280,118.9 L288,119.6 L296,118.7 L304,117.9 L312,118.9 L320,121.6 L328,124.7 L336,125.9 L344,124.4 L352,120.9 L360,117.5 L368,116.0 L376,116.6 L384,117.7 L392,117.5 L400,115.3 L408,112.2 L416,110.3 L424,110.9 L432,100.0 L440,137.7 L448,112.0 L456,120.1 L464,119.0 L472,118.5 L480,119.9 L488,122.8 L496,125.3 L504,125.5 L512,123.1 L520,119.2 L528,116.2 L536,115.3 L544,116.2 L552,117.2 L560,116.6 L568,114.2 L576,111.4 L584,110.4 L592,112.0 L600,115.7 L608,119.2 L616,107.0 L624,140.5 L632,111.3 L640,119.1 L648,120.9 L656,123.7 L664,125.5 L672,124.7 L680,121.5 L688,117.6 L696,115.0 L704,114.8 L712,116.0 L720,116.8 L728,115.8 L736,113.3 L744,111.0 L752,110.9 L760,113.4 L768,117.4 L776,120.7 L784,121.7 L792,120.8 L800,105.5 L808,139.7 L816,113.7 L824,124.2 L832,125.2 L840,123.5 L848,119.7 L856,115.9 L864,114.0 L872,114.5 L880,115.9 L888,116.4 L896,115.1 L904,112.6 L912,111.0 L920,111.8 L928,115.1 L936,119.2 L944,121.9 L952,122.2 L960,120.9 L968,119.7 L976,120.3 L984,108.4 L992,144.5 L1000,116.5 L1008,122.0 L1016,117.9 L1024,114.5 L1032,113.3 L1040,114.3 L1048,115.8 L1056,116.0 L1064,114.5 L1072,112.2 L1080,111.4 L1088,113.1 L1096,117.0 L1104,120.9 L1112,122.9 L1120,122.5 L1128,120.8 L1136,119.9 L1144,120.8 L1152,122.9 L1160,124.4 L1168,109.5 L1176,140.2 L1184,108.0 L1192,113.2 L1200,112.9 L1208,114.4 L1216,115.8 L1224,115.7 L1232,114.0 L1240,112.2 L1248,112.2 L1256,114.7 L1264,118.9 L1272,122.4 L1280,123.6 L1288,122.5 L1296,120.7 L1304,120.0 L1312,121.2 L1320,123.1 L1328,123.9 L1336,122.1 L1344,118.3 L1352,100.3 L1360,132.3 L1368,104.7 L1376,114.6 L1384,115.9 L1392,115.5 L1400,113.7 L1408,112.4 L1416,113.3 L1424,116.5 L1432,120.7 L1440,123.6"
+        />
+        <path
+          d="M0,193.3 L8,189.8 L16,185.7 L24,183.1 L32,183.0 L40,184.6 L48,185.9 L56,185.6 L64,169.8 L72,202.0 L80,174.3 L88,185.1 L96,189.2 L104,192.6 L112,193.5 L120,192.3 L128,190.5 L136,190.1 L144,191.4 L152,193.3 L160,193.9 L168,191.9 L176,187.9 L184,184.1 L192,182.2 L200,182.9 L208,184.8 L216,186.0 L224,185.3 L232,183.5 L240,182.3 L248,169.5 L256,206.9 L264,183.0 L272,193.7 L280,193.8 L288,192.0 L296,190.3 L304,190.2 L312,191.6 L320,193.2 L328,192.9 L336,190.2 L344,186.0 L352,182.7 L360,181.7 L368,183.1 L376,185.2 L384,186.1 L392,185.2 L400,183.5 L408,183.0 L416,184.9 L424,188.8 L432,178.7 L440,214.5 L448,185.8 L456,191.6 L464,190.0 L472,190.2 L480,191.7 L488,192.8 L496,191.7 L504,188.4 L512,184.3 L520,181.6 L528,181.5 L536,183.5 L544,185.6 L552,186.2 L560,185.1 L568,183.7 L576,183.9 L584,186.6 L592,190.6 L600,194.0 L608,194.9 L616,179.4 L624,211.0 L632,181.6 L640,190.1 L648,191.6 L656,192.1 L664,190.3 L672,186.5 L680,182.7 L688,180.9 L696,181.7 L704,184.2 L712,186.2 L720,186.4 L728,185.2 L736,184.2 L744,185.2 L752,188.4 L760,192.4 L768,195.0 L776,195.0 L784,192.8 L792,190.3 L800,175.2 L808,210.0 L816,183.3 L824,191.1 L832,188.6 L840,184.7 L848,181.4 L856,180.6 L864,182.3 L872,185.0 L880,186.8 L888,186.7 L896,185.4 L904,184.9 L912,186.6 L920,190.1 L928,193.8 L936,195.6 L944,194.6 L952,191.9 L960,189.5 L968,188.8 L976,189.8 L984,176.8 L992,210.0 L1000,179.0 L1008,183.1 L1016,180.6 L1024,180.7 L1032,183.1 L1040,186.0 L1048,187.4 L1056,186.9 L1064,185.8 L1072,185.8 L1080,188.1 L1088,191.8 L1096,195.0 L1104,195.7 L1112,193.9 L1120,190.8 L1128,188.6 L1136,188.4 L1144,189.5 L1152,190.1 L1160,188.7 L1168,171.3 L1176,201.8 L1184,172.1 L1192,181.2 L1200,184.2 L1208,187.0 L1216,188.0 L1224,187.3 L1232,186.3 L1240,186.9 L1248,189.6 L1256,193.3 L1264,195.7 L1272,195.5 L1280,192.8 L1288,189.6 L1296,187.8 L1304,188.0 L1312,189.1 L1320,189.2 L1328,187.3 L1336,183.8 L1344,180.8 L1352,166.1 L1360,202.1 L1368,177.5 L1376,188.0 L1384,188.6 L1392,187.6 L1400,186.9 L1408,188.1 L1416,191.1 L1424,194.5 L1432,196.0 L1440,194.7"
+        />
+        <path
+          d="M0,255.0 L8,251.5 L16,250.1 L24,251.5 L32,254.5 L40,257.2 L48,258.0 L56,257.1 L64,242.2 L72,277.0 L80,251.9 L88,263.6 L96,265.8 L104,265.3 L112,262.5 L120,259.4 L128,257.8 L136,258.1 L144,259.2 L152,259.2 L160,257.0 L168,253.5 L176,250.6 L184,250.2 L192,252.4 L200,255.8 L208,258.1 L216,258.5 L224,257.5 L232,256.9 L240,258.3 L248,247.4 L256,284.7 L264,258.0 L272,264.5 L280,261.2 L288,258.2 L296,257.1 L304,257.8 L312,258.7 L320,258.2 L328,255.6 L336,252.2 L344,250.1 L352,250.7 L360,253.7 L368,257.1 L376,259.1 L384,258.9 L392,257.8 L400,257.7 L408,259.5 L416,262.8 L424,265.4 L432,251.7 L440,283.4 L448,251.8 L456,257.1 L464,256.5 L472,257.4 L480,258.2 L488,257.1 L496,254.3 L504,251.3 L512,250.1 L520,251.7 L528,255.2 L536,258.5 L544,259.9 L552,259.3 L560,258.3 L568,258.5 L576,260.7 L584,263.9 L592,265.8 L600,265.0 L608,261.9 L616,244.2 L624,276.0 L632,248.0 L640,257.1 L648,257.5 L656,256.1 L664,253.1 L672,250.7 L680,250.5 L688,253.0 L696,256.8 L704,259.8 L712,260.6 L720,259.6 L728,258.7 L736,259.4 L744,261.9 L752,264.6 L760,265.7 L768,263.9 L776,260.3 L784,256.7 L792,255.1 L800,241.6 L808,276.8 L816,248.9 L824,255.1 L832,252.3 L840,250.5 L848,251.3 L856,254.6 L864,258.5 L872,260.9 L880,261.1 L888,259.9 L896,259.1 L904,260.2 L912,262.8 L920,265.0 L928,265.1 L936,262.5 L944,258.5 L952,255.3 L960,254.4 L968,255.3 L976,256.5 L984,242.3 L992,274.2 L1000,243.7 L1008,250.8 L1016,252.6 L1024,256.3 L1032,260.1 L1040,261.9 L1048,261.4 L1056,260.0 L1064,259.6 L1072,261.0 L1080,263.5 L1088,265.0 L1096,264.1 L1104,260.8 L1112,256.8 L1120,254.1 L1128,253.9 L1136,255.2 L1144,256.3 L1152,255.7 L1160,253.5 L1168,237.4 L1176,271.4 L1184,246.1 L1192,258.2 L1200,261.5 L1208,262.6 L1216,261.6 L1224,260.1 L1232,260.0 L1240,261.6 L1248,263.9 L1256,264.6 L1264,262.8 L1272,259.0 L1280,255.1 L1288,253.2 L1296,253.6 L1304,255.3 L1312,256.1 L1320,255.1 L1328,253.0 L1336,251.6 L1344,252.5 L1352,241.9 L1360,280.0 L1368,254.8 L1376,263.0 L1384,261.5 L1392,260.1 L1400,260.3 L1408,262.1 L1416,263.9 L1424,263.9 L1432,261.2 L1440,257.1"
+        />
+        <path
+          d="M0,321.3 L8,321.6 L16,324.4 L24,328.5 L32,331.7 L40,332.6 L48,331.4 L56,330.0 L64,316.0 L72,351.9 L80,326.0 L88,334.6 L96,332.5 L104,328.6 L112,324.9 L120,323.1 L128,323.8 L136,325.4 L144,326.1 L152,325.0 L160,322.8 L168,321.5 L176,322.7 L184,326.2 L192,330.3 L200,332.9 L208,332.9 L216,331.3 L224,330.0 L232,330.4 L240,332.3 L248,320.0 L256,353.7 L264,322.9 L272,326.7 L280,323.4 L288,322.5 L296,323.8 L304,325.5 L312,325.9 L320,324.5 L328,322.6 L336,322.1 L344,324.2 L352,328.1 L360,332.0 L368,333.7 L376,333.0 L384,331.1 L392,330.0 L400,330.7 L408,332.6 L416,333.7 L424,332.5 L432,315.0 L440,344.9 L448,314.3 L456,322.3 L464,324.0 L472,325.7 L480,325.8 L488,324.3 L496,322.7 L504,323.0 L512,325.9 L520,330.0 L528,333.3 L536,334.2 L544,332.8 L552,330.8 L560,329.9 L568,330.9 L576,332.6 L584,333.1 L592,331.1 L600,327.1 L608,323.3 L616,307.5 L624,342.3 L632,316.5 L640,326.0 L648,325.7 L656,324.2 L664,323.2 L672,324.3 L680,327.7 L688,331.8 L696,334.4 L704,334.4 L712,332.4 L720,330.3 L728,329.8 L736,331.0 L744,332.4 L752,332.1 L760,329.4 L768,325.3 L776,322.0 L784,321.1 L792,322.7 L800,311.1 L808,346.3 L816,317.8 L824,324.3 L832,323.9 L840,325.8 L848,329.6 L856,333.3 L864,335.1 L872,334.2 L880,331.8 L888,329.8 L896,329.6 L904,330.9 L912,331.9 L920,330.8 L928,327.6 L936,323.6 L944,321.0 L952,321.1 L960,323.3 L968,325.8 L976,326.7 L984,311.9 L992,344.6 L1000,316.8 L1008,327.4 L1016,331.3 L1024,334.6 L1032,335.4 L1040,333.7 L1048,330.9 L1056,329.2 L1064,329.4 L1072,330.7 L1080,331.2 L1088,329.4 L1096,325.8 L1104,322.1 L1112,320.4 L1120,321.5 L1128,324.2 L1136,326.5 L1144,327.1 L1152,326.1 L1160,325.1 L1168,312.0 L1176,349.1 L1184,324.9 L1192,335.4 L1200,335.2 L1208,332.8 L1216,330.0 L1224,328.6 L1232,329.2 L1240,330.3 L1248,330.2 L1256,327.9 L1264,324.1 L1272,321.0 L1280,320.3 L1288,322.2 L1296,325.2 L1304,327.3 L1312,327.5 L1320,326.4 L1328,325.9 L1336,327.4 L1344,330.7 L1352,320.3 L1360,355.9 L1368,326.7 L1376,331.7 L1384,329.0 L1392,328.1 L1400,328.9 L1408,329.8 L1416,329.1 L1424,326.3 L1432,322.7 L1440,320.3"
+        />
+        <path
+          d="M0,396.2 L8,399.4 L16,403.2 L24,405.5 L32,405.1 L40,402.5 L48,399.8 L56,398.6 L64,385.3 L72,420.4 L80,392.1 L88,397.6 L96,393.8 L104,390.8 L112,390.4 L120,392.5 L128,395.5 L136,397.4 L144,397.4 L152,396.2 L160,395.9 L168,397.6 L176,401.1 L184,404.5 L192,405.9 L200,404.5 L208,401.4 L216,398.8 L224,398.1 L232,399.0 L240,399.9 L248,385.0 L256,416.0 L264,384.4 L272,390.2 L280,390.8 L288,393.5 L296,396.6 L304,398.2 L312,397.7 L320,396.7 L328,396.8 L336,399.0 L344,402.6 L352,405.4 L360,405.8 L368,403.5 L376,400.2 L384,397.9 L392,397.6 L400,398.7 L408,399.2 L416,397.7 L424,394.5 L432,377.2 L440,410.0 L448,383.6 L456,394.8 L464,397.8 L472,398.8 L480,398.1 L488,397.2 L496,397.8 L504,400.5 L512,403.9 L520,405.9 L528,405.2 L536,402.2 L544,398.8 L552,397.0 L560,397.2 L568,398.3 L576,398.4 L584,396.4 L592,393.2 L600,390.5 L608,390.3 L616,378.7 L624,416.3 L632,390.9 L640,399.4 L648,398.5 L656,397.8 L664,398.9 L672,401.8 L680,404.8 L688,405.9 L696,404.3 L704,400.7 L712,397.5 L720,396.2 L728,396.8 L736,397.8 L744,397.5 L752,395.2 L760,392.1 L768,390.2 L776,391.0 L784,394.1 L792,397.8 L800,386.0 L808,419.9 L816,390.8 L824,398.4 L832,400.0 L840,402.9 L848,405.4 L856,405.5 L864,402.9 L872,399.1 L880,396.2 L888,395.5 L896,396.5 L904,397.4 L912,396.6 L920,394.1 L928,391.3 L936,390.3 L944,392.1 L952,395.8 L960,399.3 L968,400.9 L976,400.3 L984,385.1 L992,419.1 L1000,393.0 L1008,403.8 L1016,405.5 L1024,404.6 L1032,401.4 L1040,397.5 L1048,395.1 L1056,395.0 L1064,396.2 L1072,396.9 L1080,395.7 L1088,393.1 L1096,390.9 L1104,390.9 L1112,393.6 L1120,397.5 L1128,400.7 L1136,401.5 L1144,400.6 L1152,399.4 L1160,399.8 L1168,387.9 L1176,424.4 L1184,397.3 L1192,403.4 L1200,399.6 L1208,395.9 L1216,394.2 L1224,394.7 L1232,396.1 L1240,396.4 L1248,395.0 L1256,392.5 L1264,390.9 L1272,391.9 L1280,395.2 L1288,399.3 L1296,401.8 L1304,402.0 L1312,400.7 L1320,399.7 L1328,400.4 L1336,402.6 L1344,404.6 L1352,390.6 L1360,421.8 L1368,389.8 L1376,394.5 L1384,393.5 L1392,394.5 L1400,396.0 L1408,396.0 L1416,394.3 L1424,392.1 L1432,391.3 L1440,393.2"
+        />
+        <path
+          d="M0,472.2 L8,474.6 L16,475.2 L24,473.1 L32,469.2 L40,465.7 L48,464.2 L56,464.8 L64,452.2 L72,486.4 L80,456.7 L88,462.2 L96,460.9 L104,462.1 L112,465.6 L120,469.6 L128,471.9 L136,471.9 L144,470.5 L152,469.6 L160,470.5 L168,472.9 L176,474.8 L184,474.4 L192,471.5 L200,467.4 L208,464.3 L216,463.5 L224,464.7 L232,466.1 L240,465.9 L248,450.1 L256,481.9 L264,453.4 L272,463.5 L280,467.5 L288,471.2 L296,472.8 L304,472.1 L312,470.5 L320,469.9 L328,471.1 L336,473.3 L344,474.5 L352,473.3 L360,469.7 L368,465.6 L376,463.2 L384,463.2 L392,464.8 L400,466.0 L408,465.5 L416,463.6 L424,461.9 L432,448.2 L440,485.2 L448,461.3 L456,472.6 L464,473.4 L472,472.1 L480,470.4 L488,470.1 L496,471.6 L504,473.5 L512,473.9 L520,471.8 L528,467.8 L536,464.0 L544,462.3 L552,463.1 L560,465.0 L568,466.0 L576,465.2 L584,463.3 L592,462.2 L600,463.5 L608,467.0 L616,457.1 L624,493.7 L632,465.6 L640,471.9 L648,470.2 L656,470.2 L664,471.8 L672,473.4 L680,473.0 L688,470.1 L696,465.9 L704,462.7 L712,461.8 L720,463.3 L728,465.3 L736,466.0 L744,465.0 L752,463.3 L760,462.9 L768,465.0 L776,468.9 L784,472.7 L792,474.4 L800,459.6 L808,491.4 L816,462.0 L824,470.3 L832,471.9 L840,472.9 L848,471.7 L856,468.2 L864,464.2 L872,461.6 L880,461.7 L888,463.7 L896,465.7 L904,466.1 L912,464.9 L920,463.5 L928,463.9 L936,466.7 L944,470.8 L952,474.0 L960,474.8 L968,473.2 L976,470.9 L984,455.7 L992,490.3 L1000,463.8 L1008,472.2 L1016,470.2 L1024,466.4 L1032,462.6 L1040,460.9 L1048,461.9 L1056,464.3 L1064,466.2 L1072,466.3 L1080,465.0 L1088,464.0 L1096,465.2 L1104,468.5 L1112,472.5 L1120,475.0 L1128,474.8 L1136,472.6 L1144,470.2 L1152,469.3 L1160,470.2 L1168,457.5 L1176,491.2 L1184,460.6 L1192,464.6 L1200,461.4 L1208,460.7 L1216,462.4 L1224,465.1 L1232,466.8 L1240,466.5 L1248,465.2 L1256,464.8 L1264,466.6 L1272,470.3 L1280,473.9 L1288,475.6 L1296,474.5 L1304,471.7 L1312,469.4 L1320,469.0 L1328,470.0 L1336,470.9 L1344,470.0 L1352,452.9 L1360,483.0 L1368,452.5 L1376,460.8 L1384,463.3 L1392,466.0 L1400,467.3 L1408,466.7 L1416,465.6 L1424,465.8 L1432,468.2 L1440,471.9"
+        />
+        <path
+          d="M0,541.6 L8,541.1 L16,538.3 L24,534.3 L32,531.2 L40,530.7 L48,532.7 L56,535.3 L64,522.8 L72,556.4 L80,527.1 L88,534.8 L96,536.9 L104,540.6 L112,544.2 L120,545.6 L128,544.2 L136,541.5 L144,539.3 L152,539.0 L160,540.2 L168,541.0 L176,539.8 L184,536.5 L192,532.7 L200,530.5 L208,531.0 L216,533.6 L224,536.2 L232,537.3 L240,536.6 L248,521.5 L256,555.8 L264,530.4 L272,542.3 L280,545.2 L288,545.6 L296,543.5 L304,540.5 L312,538.6 L320,538.7 L328,539.9 L336,540.2 L344,538.4 L352,534.8 L360,531.4 L368,530.1 L376,531.6 L384,534.6 L392,537.2 L400,537.8 L408,536.9 L416,536.1 L424,537.0 L432,526.1 L440,563.7 L448,537.8 L456,545.2 L464,542.4 L472,539.3 L480,537.9 L488,538.4 L496,539.4 L504,539.3 L512,536.9 L520,533.3 L528,530.5 L536,530.3 L544,532.6 L552,535.9 L560,538.1 L568,538.3 L576,537.2 L584,536.8 L592,538.3 L600,541.6 L608,544.8 L616,532.0 L624,564.4 L632,533.1 L640,538.2 L648,537.2 L656,538.0 L664,538.9 L672,538.2 L680,535.5 L688,532.1 L696,530.1 L704,530.8 L712,533.8 L720,537.2 L728,539.0 L736,538.7 L744,537.6 L752,537.6 L760,539.6 L768,542.9 L776,545.5 L784,545.7 L792,543.2 L800,525.7 L808,557.1 L816,528.6 L824,537.7 L832,538.3 L840,537.1 L848,534.1 L856,531.1 L864,530.1 L872,531.8 L880,535.3 L888,538.5 L896,539.8 L904,539.1 L912,538.1 L920,538.5 L928,540.9 L936,544.0 L944,545.8 L952,545.0 L960,541.8 L968,538.2 L976,536.1 L984,522.2 L992,557.3 L1000,529.6 L1008,536.0 L1016,533.0 L1024,530.6 L1032,530.5 L1040,533.1 L1048,536.9 L1056,539.8 L1064,540.4 L1072,539.4 L1080,538.6 L1088,539.4 L1096,542.0 L1104,544.8 L1112,545.7 L1120,543.8 L1128,540.2 L1136,536.7 L1144,535.2 L1152,535.8 L1160,537.0 L1168,522.9 L1176,554.9 L1184,524.1 L1192,530.4 L1200,531.4 L1208,534.7 L1216,538.6 L1224,540.9 L1232,540.9 L1240,539.7 L1248,539.1 L1256,540.3 L1264,542.9 L1272,545.2 L1280,545.1 L1288,542.4 L1296,538.4 L1304,535.3 L1312,534.5 L1320,535.6 L1328,536.7 L1336,536.2 L1344,534.0 L1352,517.5 L1360,550.7 L1368,524.6 L1376,536.5 L1384,540.1 L1392,541.8 L1400,541.2 L1408,539.9 L1416,539.5 L1424,541.1 L1432,543.6 L1440,545.1"
+        />
+        <path
+          d="M0,606.8 L8,604.7 L16,601.8 L24,600.4 L32,601.6 L40,605.1 L48,608.8 L56,610.9 L64,596.8 L72,629.5 L80,601.1 L88,610.5 L96,613.2 L104,615.3 L112,615.0 L120,612.1 L128,608.1 L136,605.2 L144,604.6 L152,605.7 L160,606.7 L168,606.1 L176,603.8 L184,601.3 L192,600.8 L200,602.9 L208,606.8 L216,610.3 L224,611.8 L232,611.1 L240,609.7 L248,595.6 L256,631.3 L264,605.9 L272,615.2 L280,613.9 L288,610.3 L296,606.4 L304,604.1 L312,604.2 L320,605.6 L328,606.4 L336,605.4 L344,603.1 L352,601.2 L360,601.6 L368,604.5 L376,608.6 L384,611.7 L392,612.4 L400,611.2 L408,609.9 L416,610.1 L424,612.0 L432,600.2 L440,634.7 L448,604.5 L456,608.5 L464,604.8 L472,603.3 L480,604.0 L488,605.6 L496,606.1 L504,604.8 L512,602.6 L520,601.4 L528,602.8 L536,606.3 L544,610.4 L552,612.8 L560,612.7 L568,611.2 L576,610.0 L584,610.5 L592,612.5 L600,614.2 L608,613.8 L616,596.8 L624,626.6 L632,595.4 L640,602.7 L648,604.0 L656,605.7 L664,605.9 L672,604.4 L680,602.4 L688,602.0 L696,604.2 L704,608.2 L712,612.0 L720,613.6 L728,612.8 L736,611.0 L744,610.0 L752,610.9 L760,612.8 L768,613.8 L776,612.5 L784,608.9 L792,604.8 L800,588.3 L808,622.4 L816,596.2 L824,605.8 L832,605.7 L840,604.1 L848,602.6 L856,603.0 L864,606.0 L872,610.1 L880,613.4 L888,614.1 L896,612.6 L904,610.7 L912,610.0 L920,611.1 L928,612.8 L936,613.1 L944,611.0 L952,607.0 L960,603.2 L968,601.6 L976,602.5 L984,590.6 L992,626.0 L1000,597.6 L1008,604.0 L1016,603.0 L1024,604.3 L1032,607.8 L1040,611.9 L1048,614.4 L1056,614.2 L1064,612.2 L1072,610.3 L1080,609.9 L1088,611.2 L1096,612.5 L1104,612.1 L1112,609.3 L1120,605.2 L1128,601.9 L1136,601.2 L1144,602.9 L1152,605.2 L1160,606.3 L1168,591.6 L1176,624.1 L1184,595.8 L1192,605.8 L1200,609.7 L1208,613.4 L1216,615.0 L1224,614.0 L1232,611.6 L1240,609.8 L1248,609.8 L1256,611.1 L1264,612.0 L1272,610.8 L1280,607.5 L1288,603.5 L1296,601.0 L1304,601.2 L1312,603.5 L1320,605.8 L1328,606.6 L1336,605.7 L1344,604.4 L1352,590.8 L1360,627.5 L1368,603.5 L1376,614.6 L1384,615.3 L1392,613.5 L1400,610.8 L1408,609.3 L1416,609.6 L1424,610.9 L1432,611.3 L1440,609.4"
+        />
+      </svg>
+    </div>
+    <header class="site-header">
+      <div class="header-inner wrap">
+        <a class="wordmark" href="#home">ma<span>.</span></a>
+        <nav class="navigation" aria-label="Main navigation">
+          <a href="#home" aria-current="location">Home</a><a href="#projects">Projects</a
+          ><a href="#about">About</a
+          ><a href="https://github.com/MJA0211" target="_blank" rel="noopener noreferrer"
+            >GitHub ↗</a
+          ><a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <section id="home" class="hero wrap" aria-labelledby="hero-title">
+        <p class="hero-kicker">SOFTWARE ENGINEER · UNIVERSITY OF MARYLAND</p>
+        <h1 id="hero-title">Muhammed Awwad</h1>
+        <p class="hero-description">
+          I build software around AI, data, and automation. My projects cover vehicle valuation, CI
+          failure investigation, and enterprise integration workflows.
+        </p>
+        <p class="hero-current">
+          These are ongoing engineering projects. Below are working demos, implementation notes, and
+          what I’m developing next.
+        </p>
+        <div class="social-links" aria-label="Social and contact links">{{contacts:compact}}</div>
+        <a class="hero-email" href="mailto:moeawwad02@outlook.com">moeawwad02@outlook.com</a>
+      </section>
+      <section id="projects" class="projects wrap" aria-labelledby="projects-title">
+        <div class="section-heading">
+          <h2 id="projects-title">Selected projects</h2>
+          <p>Demos and notes from the current implementations.</p>
+        </div>
+        <div class="project-grid">
+          <article id="autovalue" class="project flagship" aria-labelledby="autovalue-title">
+            <header class="project-header">
+              <h3 id="autovalue-title">AutoValue AI</h3>
+              <span class="development-status">ACTIVE DEVELOPMENT</span>
+            </header>
+            <div class="project-media">
+              <div class="media-topline">
+                <span>FEATURED PROJECT</span><span class="media-kind">DEMO VIDEO</span>
+              </div>
+              <video
+                id="autovalue-video"
+                controls
+                playsinline
+                preload="none"
+                poster="/images/autovalue-video-poster.webp"
+                aria-label="AutoValue AI demo video"
+                aria-describedby="autovalue-recording"
+              >
+                <source src="/videos/autovalue-demo.mp4" type="video/mp4" />
+                <track
+                  kind="captions"
+                  src="/videos/autovalue-captions.vtt"
+                  srclang="en"
+                  label="English descriptions"
+                />
+                <p>
+                  Your browser cannot play this recording.
+                  <a href="/videos/autovalue-demo.mp4">Open the AutoValue AI demo</a>.
+                </p>
+              </video>
+              <p class="recording-note" id="autovalue-recording">
+                1:45 · Valuation and model dashboard. Historical 2023 U.S. asking-price data.
+              </p>
+              <div class="video-links">
+                <a href="/videos/autovalue-demo.mp4" target="_blank" rel="noopener">Open video ↗</a
+                ><a href="/videos/autovalue-transcript.html" target="_blank" rel="noopener"
+                  >Text walkthrough ↗</a
+                >
+              </div>
+            </div>
+            <div class="project-copy">
+              <p class="project-category">Machine learning / data engineering</p>
+              <h4>Historical vehicle valuation with calibrated uncertainty.</h4>
+              <p>
+                A React and FastAPI application backed by a trained Random Forest model. The data
+                pipeline checks source permissions, normalizes records, and separates asking prices
+                from completed sales.
+              </p>
+              <p>
+                Inference checks the model and calibration artifacts before returning an estimate
+                and prediction interval. A separate River simulation explores learning from new
+                outcomes.
+              </p>
+              <div class="project-progress">
+                <span>IN DEVELOPMENT</span>
+                <p>
+                  I’m developing agentic acquisition from approved sources. The V2 workflow already
+                  exercises extraction and evidence checks on owned fixtures; the external workflow
+                  is still in progress.
+                </p>
+              </div>
+              <p class="tech-line">python · scikit-learn · fastapi · react · river</p>
+            </div>
+            <footer class="project-links">
+              <a
+                href="https://github.com/MJA0211/autovalue-ai"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GitHub ↗</a
+              ><a href="#autovalue-case-study">Engineering notes →</a>
+            </footer>
+          </article>
+          <article id="failurelab" class="project" aria-labelledby="failurelab-title">
+            <header class="project-header">
+              <h3 id="failurelab-title">FailureLab</h3>
+              <span class="development-status">ACTIVE DEVELOPMENT</span>
+            </header>
+            <div class="project-media">
+              <div class="media-topline">
+                <span>RECORDED WALKTHROUGH</span><span class="media-kind">DEMO VIDEO</span>
+              </div>
+              <video
+                id="failurelab-video"
+                controls
+                playsinline
+                preload="none"
+                poster="/images/failurelab-video-poster.webp"
+                aria-label="FailureLab demo video"
+                aria-describedby="failurelab-recording"
+              >
+                <source src="/videos/failurelab-demo.webm" type="video/webm" />
+                <track
+                  kind="captions"
+                  src="/videos/failurelab-captions.vtt"
+                  srclang="en"
+                  label="English descriptions"
+                />
+                <p>
+                  Your browser cannot play this recording.
+                  <a href="/videos/failurelab-demo.webm">Open the FailureLab demo</a>.
+                </p>
+              </video>
+              <p class="recording-note" id="failurelab-recording">
+                0:28 · Owned fixtures with the deterministic baseline. Recorded browser experiments.
+              </p>
+              <div class="video-links">
+                <a href="/videos/failurelab-demo.webm" target="_blank" rel="noopener"
+                  >Open video ↗</a
+                ><a href="/videos/failurelab-transcript.html" target="_blank" rel="noopener"
+                  >Text walkthrough ↗</a
+                >
+              </div>
+            </div>
+            <div class="project-copy">
+              <p class="project-category">Developer tools / reliability</p>
+              <h4>CI investigation with reproducible browser experiments.</h4>
+              <p>
+                FailureLab retrieves logs, source, and browser evidence, then tests a proposed
+                intervention against the failing baseline. A LangGraph workflow handles diagnosis
+                and planning.
+              </p>
+              <p>
+                The application derives verdicts from recorded runs. Evidence and checkpoints are
+                retained for review and replay; the model cannot assign the final finding.
+              </p>
+              <div class="project-progress">
+                <span>IN DEVELOPMENT</span>
+                <p>
+                  I’m expanding the agentic investigation workflow. The current system has typed
+                  agent stages and executable verification; broader validation and release checks
+                  are still underway.
+                </p>
+              </div>
+              <p class="tech-line">python · langgraph · playwright · fastapi · react</p>
+            </div>
+            <footer class="project-links">
+              <a
+                href="https://github.com/MJA0211/failurelab"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GitHub ↗</a
+              ><a href="#failurelab-case-study">Engineering notes →</a>
+            </footer>
+          </article>
+          <article id="eicc" class="project" aria-labelledby="eicc-title">
+            <header class="project-header">
+              <h3 id="eicc-title">EICC</h3>
+              <span class="development-status">ACTIVE DEVELOPMENT</span>
+            </header>
+            <div class="project-media">
+              <div class="media-topline">
+                <span>RECORDED WALKTHROUGH</span><span class="media-kind">DEMO VIDEO</span>
+              </div>
+              <video
+                id="eicc-video"
+                controls
+                playsinline
+                preload="none"
+                poster="/images/eicc-video-poster.webp"
+                aria-label="EICC demo video"
+                aria-describedby="eicc-recording"
+              >
+                <source src="/videos/eicc-demo.mp4" type="video/mp4" />
+                <track
+                  kind="captions"
+                  src="/videos/eicc-captions.vtt"
+                  srclang="en"
+                  label="English descriptions"
+                />
+                <p>
+                  Your browser cannot play this recording.
+                  <a href="/videos/eicc-demo.mp4">Open the EICC demo</a>.
+                </p>
+              </video>
+              <p class="recording-note" id="eicc-recording">
+                3:26 · Captioned SOAP failure-to-release walkthrough. Fictional enterprise scenario.
+              </p>
+              <div class="video-links">
+                <a href="/videos/eicc-demo.mp4" target="_blank" rel="noopener">Open video ↗</a
+                ><a href="/videos/eicc-transcript.html" target="_blank" rel="noopener"
+                  >Text walkthrough ↗</a
+                >
+              </div>
+            </div>
+            <div class="project-copy">
+              <p class="project-category">Integration / delivery governance</p>
+              <h4>Enterprise Integration Control Center.</h4>
+              <p>
+                A software engineering demonstration that connects requirements to interfaces, test
+                evidence, and release decisions. The workspace is built around the fictional
+                Northstar enterprise scenario.
+              </p>
+              <p>
+                REST and SOAP tests run against local simulators. Contract fingerprints invalidate
+                stale evidence, and the server rechecks release gates before a transition.
+              </p>
+              <div class="project-progress">
+                <span>IN DEVELOPMENT</span>
+                <p>
+                  I’m continuing to develop the enterprise workflow on this architecture. I’m
+                  defining the next capabilities around the existing requirements and release
+                  process.
+                </p>
+              </div>
+              <p class="tech-line">typescript · react · fastapi · postgresql · docker</p>
+            </div>
+            <footer class="project-links">
+              <a href="/documents/eicc-architecture.md" target="_blank" rel="noopener"
+                >Architecture ↗</a
+              ><a href="#eicc-case-study">Engineering notes →</a>
+            </footer>
+          </article>
+        </div>
+      </section>
+      <section class="engineering wrap" aria-labelledby="engineering-title">
+        <div class="section-heading">
+          <h2 id="engineering-title">Engineering notes</h2>
+          <p>Implemented today, in development, and what’s next.</p>
+        </div>
+        <details class="case-study" id="autovalue-case-study">
+          <summary>
+            <h3 class="summary-label">
+              <span class="study-name">AutoValue AI</span
+              ><span class="summary-hint">Data pipeline, model &amp; serving</span>
+            </h3>
+            <span class="expand-icon" aria-hidden="true">+</span>
+          </summary>
+          <div class="case-content">
+            <div class="case-architecture">
+              <h4>How the current system works</h4>
+              <div class="architecture" data-tabs>
+                <div class="diagram-header">
+                  <span class="mono">IMPLEMENTED / SYSTEM ARCHITECTURE</span
+                  ><span class="diagram-key mono"
+                    ><span class="status-dot" aria-hidden="true"></span> EXPLORE THE FLOW</span
+                  >
+                </div>
+                <div class="tab-list" role="tablist" aria-label="AutoValue architecture views">
+                  <button
+                    id="tab-inference"
+                    role="tab"
+                    aria-selected="true"
+                    aria-controls="panel-inference"
+                  >
+                    Inference
+                  </button>
+                  <button
+                    id="tab-data"
+                    role="tab"
+                    aria-selected="false"
+                    aria-controls="panel-data"
+                    tabindex="-1"
+                  >
+                    Data pipeline
+                  </button>
+                  <button
+                    id="tab-shadow"
+                    role="tab"
+                    aria-selected="false"
+                    aria-controls="panel-shadow"
+                    tabindex="-1"
+                  >
+                    Shadow learning
+                  </button>
+                </div>
+                <div
+                  id="panel-inference"
+                  class="diagram-panel"
+                  role="tabpanel"
+                  aria-labelledby="tab-inference"
+                  tabindex="0"
+                >
+                  <div class="diagram-flow">
+                    <div class="flow-node">
+                      <svg class="icon" aria-hidden="true"><use href="#icon-window" /></svg>
+                      <div><strong>Vehicle input</strong><span>React interface</span></div>
+                      <span class="node-number mono">01</span>
+                    </div>
+                    <div class="flow-connector"><span>validated feature contract</span></div>
+                    <div class="flow-node">
+                      <svg class="icon" aria-hidden="true"><use href="#icon-braces" /></svg>
+                      <div>
+                        <strong>FastAPI → Frozen RF05</strong
+                        ><span>Authenticated scikit-learn pipeline</span>
+                      </div>
+                      <span class="node-number mono">02</span>
+                    </div>
+                    <div class="flow-connector"><span>split-conformal calibration</span></div>
+                    <div class="flow-node node-accent">
+                      <svg class="icon" aria-hidden="true"><use href="#icon-chart" /></svg>
+                      <div>
+                        <strong>Estimate + prediction interval</strong
+                        ><span>Historical 2023 asking price · USD</span>
+                      </div>
+                      <span class="node-number mono">03</span>
+                    </div>
+                  </div>
+                  <p class="diagram-note">
+                    <svg class="icon" aria-hidden="true"><use href="#icon-shield" /></svg>Missing or
+                    mismatched artifacts stop inference.
+                  </p>
+                </div>
+                <div
+                  id="panel-data"
+                  class="diagram-panel"
+                  role="tabpanel"
+                  aria-labelledby="tab-data"
+                  tabindex="0"
+                  hidden
+                >
+                  <div class="diagram-flow">
+                    <div class="flow-node">
+                      <svg class="icon" aria-hidden="true"><use href="#icon-database" /></svg>
+                      <div>
+                        <strong>Reviewed sources</strong
+                        ><span>Pinned datasets · bounded adapters</span>
+                      </div>
+                      <span class="node-number mono">01</span>
+                    </div>
+                    <div class="flow-connector">
+                      <span>schema, units &amp; target validation</span>
+                    </div>
+                    <div class="flow-node">
+                      <svg class="icon" aria-hidden="true"><use href="#icon-filter" /></svg>
+                      <div>
+                        <strong>Normalize + deduplicate</strong
+                        ><span>Quarantine invalid records · retain lineage</span>
+                      </div>
+                      <span class="node-number mono">02</span>
+                    </div>
+                    <div class="flow-connector"><span>separate permission to train</span></div>
+                    <div class="flow-node node-accent">
+                      <svg class="icon" aria-hidden="true"><use href="#icon-shield" /></svg>
+                      <div>
+                        <strong>Governed batch experiments</strong
+                        ><span>Independent training &amp; evaluation partitions</span>
+                      </div>
+                      <span class="node-number mono">03</span>
+                    </div>
+                  </div>
+                  <p class="diagram-note">
+                    <svg class="icon" aria-hidden="true"><use href="#icon-shield" /></svg>Collection
+                    permission does not authorize model training.
+                  </p>
+                </div>
+                <div
+                  id="panel-shadow"
+                  class="diagram-panel"
+                  role="tabpanel"
+                  aria-labelledby="tab-shadow"
+                  tabindex="0"
+                  hidden
+                >
+                  <div class="diagram-flow">
+                    <div class="flow-node">
+                      <svg class="icon" aria-hidden="true"><use href="#icon-wave" /></svg>
+                      <div>
+                        <strong>Synthetic outcome stream</strong
+                        ><span>Owned simulation scenarios</span>
+                      </div>
+                      <span class="node-number mono">01</span>
+                    </div>
+                    <div class="flow-connector">
+                      <span>independent online-learning permission</span>
+                    </div>
+                    <div class="flow-node">
+                      <svg class="icon" aria-hidden="true"><use href="#icon-branch" /></svg>
+                      <div>
+                        <strong>River shadow learner</strong
+                        ><span>Predict, evaluate, then update</span>
+                      </div>
+                      <span class="node-number mono">02</span>
+                    </div>
+                    <div class="flow-connector"><span>prequential measurement</span></div>
+                    <div class="flow-node node-accent">
+                      <svg class="icon" aria-hidden="true"><use href="#icon-chart" /></svg>
+                      <div>
+                        <strong>Metrics + ADWIN telemetry</strong
+                        ><span>Observe simulated concept drift</span>
+                      </div>
+                      <span class="node-number mono">03</span>
+                    </div>
+                  </div>
+                  <p class="diagram-note">
+                    <svg class="icon" aria-hidden="true"><use href="#icon-shield" /></svg>Simulation
+                    stays isolated from the serving model.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="case-opening">
+              <p class="implemented-tag">IMPLEMENTED</p>
+              <p class="eyebrow">AUTOVALUE AI / ENGINEERING NOTES</p>
+              <h4>Preparing the data and serving the model</h4>
+              <p>
+                AutoValue defines its target and checks data rights before model fitting. Record
+                identity survives processing, and the application serves a frozen model that
+                research experiments cannot change.
+              </p>
+            </div>
+            <div class="case-grid">
+              <div>
+                <h5>The problem</h5>
+                <p>
+                  The sources report different kinds of prices. A monthly payment is not a vehicle
+                  price, and an advertised price is not a completed sale. AutoValue keeps those
+                  meanings separate and checks for duplicates and leakage before evaluating a model.
+                </p>
+              </div>
+              <div>
+                <h5>The implementation</h5>
+                <p>
+                  Source-specific adapters map records into a common schema. Prices use integer
+                  cents; text and mileage are normalized. Source identity and content hashes detect
+                  duplicates, while malformed or conflicting rows enter quarantine with their
+                  lineage intact.
+                </p>
+              </div>
+              <div>
+                <h5>The model boundary</h5>
+                <p>
+                  RF05 uses scikit-learn preprocessing and Random Forest regression. Numeric
+                  imputation and categorical encoding are fitted inside training folds. A separate
+                  partition calibrates the prediction interval, and a frozen final holdout is
+                  reserved for evaluation.
+                </p>
+              </div>
+              <div>
+                <h5>The serving boundary</h5>
+                <p>
+                  FastAPI checks artifact hashes, estimator identity, fitted structure, and
+                  calibration binding. Invalid or missing artifacts return a controlled 503. SQLite
+                  retains a bounded history scoped to a hashed anonymous browser identifier.
+                </p>
+              </div>
+            </div>
+            <div class="case-callout">
+              <span class="mono">RESEARCH AND SERVING</span>
+              <p>
+                River runs as a separate shadow-learning simulation and cannot update the serving
+                model. The V2 research CLI has optional AI-assisted extraction, evidence
+                corroboration, and a private SQLite ledger. Those components have run on synthetic
+                fixtures. The documented external acquisition attempt stopped at browser and access
+                limits.
+              </p>
+            </div>
+            <figure class="project-figure">
+              <a
+                href="/images/autovalue-valuation.png"
+                data-lightbox
+                data-caption="AutoValue AI: the repository’s authentic RF05 valuation example. Historical asking price, not a live quote."
+                aria-label="Enlarge AutoValue AI valuation screenshot"
+                ><img
+                  src="/images/autovalue-valuation.png"
+                  alt="AutoValue AI vehicle form and historical asking-price result with a calibrated prediction interval."
+                  width="1440"
+                  height="1200"
+                  loading="lazy"
+                  decoding="async"
+                /><span class="image-expand" aria-hidden="true">↗</span></a
+              >
+              <figcaption>
+                <span>Actual application capture · repository-owned example vehicle</span
+                ><span>Click to inspect ↗</span>
+              </figcaption>
+            </figure>
+            <div class="case-grid">
+              <div>
+                <h5>Testing the boundaries</h5>
+                <p>
+                  The repository includes tests for normalization, invalid records, provenance,
+                  training permissions, evaluation separation, calibration, model authentication,
+                  API contracts, history isolation, and shadow-learning behavior.
+                </p>
+              </div>
+              <div>
+                <h5>Outcome &amp; limitations</h5>
+                <p>
+                  The application returns historical 2023 U.S. asking-price estimates and calibrated
+                  intervals. Errors vary across vehicle groups and intervals can be broad. The
+                  private estimator is excluded from the public repository; a clean clone needs that
+                  artifact for inference. Live-market valuation and production adoption are
+                  unverified.
+                </p>
+              </div>
+            </div>
+            <div class="development-notes">
+              <h5>What I’m developing next</h5>
+              <div class="development-grid">
+                <div>
+                  <span class="state-label mono">IN DEVELOPMENT</span>
+                  <h6>Agentic acquisition &amp; processing</h6>
+                  <p>
+                    I’m developing an agentic workflow for finding records in approved sources and
+                    extracting vehicle data. The V2 code already exercises evidence checks,
+                    normalization, identity grouping, and governance on owned fixtures. Work
+                    continues on the external acquisition workflow.
+                  </p>
+                </div>
+                <div>
+                  <span class="state-label state-future mono">FUTURE</span>
+                  <h6>Verified outcomes for learning</h6>
+                  <p>
+                    The next direction is acquisition from authorized external sources, with
+                    evidence confidence and explicit separation of asking prices from verified
+                    sales. Only approved, verified outcomes should reach downstream learning. That
+                    live pipeline is still planned.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="case-links">
+              <a
+                class="text-link"
+                href="https://github.com/MJA0211/autovalue-ai"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Explore the repository <span aria-hidden="true">↗</span></a
+              ><a
+                class="text-link"
+                href="/documents/autovalue-model-card.md"
+                target="_blank"
+                rel="noopener"
+                >Read the model card <span aria-hidden="true">↗</span></a
+              >
+            </div>
+          </div>
+        </details>
+        <details class="case-study" id="failurelab-case-study">
+          <summary>
+            <h3 class="summary-label">
+              <span class="study-name">FailureLab</span
+              ><span class="summary-hint">Evidence, experiments &amp; replay</span>
+            </h3>
+            <span class="expand-icon" aria-hidden="true">+</span>
+          </summary>
+          <div class="case-content">
+            <div class="case-opening">
+              <p class="implemented-tag">IMPLEMENTED</p>
+              <p class="eyebrow">FAILURELAB / ENGINEERING NOTES</p>
+              <h4>Following an investigation from evidence to replay</h4>
+              <p>
+                FailureLab starts with the failed assertion and retrieves logs, source from the
+                failing commit, and browser evidence. The investigation proposes an intervention and
+                compares its behavior with the original failure.
+              </p>
+            </div>
+            <ol class="workflow-list">
+              <li>
+                <span class="mono">01</span>
+                <div>
+                  <h5>Collect &amp; retrieve</h5>
+                  <p>
+                    Authenticated import and HMAC-validated GitHub webhooks create bounded evidence
+                    snapshots. Redacted content receives stable IDs and hashes. BM25 and exact
+                    identifiers retrieve evidence within each investigation; neural retrieval and
+                    reranking are optional.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <span class="mono">02</span>
+                <div>
+                  <h5>Diagnose &amp; plan</h5>
+                  <p>
+                    Two LangGraph stages return typed diagnoses and intervention plans. Pydantic
+                    checks citation IDs, hypotheses, action names, and repetition budgets. Chat mode
+                    uses a model provider; explicit baseline mode uses deterministic signatures.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <span class="mono">03</span>
+                <div>
+                  <h5>Execute &amp; verify</h5>
+                  <p>
+                    Playwright runs fresh, interleaved baseline and intervention contexts with the
+                    same assertions. A finding is supported only if every baseline run fails and
+                    every intervention run passes. Mixed results remain inconclusive.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <span class="mono">04</span>
+                <div>
+                  <h5>Retain &amp; replay</h5>
+                  <p>
+                    SQLAlchemy storage, leased jobs, heartbeat renewal, bounded retries, and
+                    persistent checkpoints support recovery. Completed-case replay validates stored
+                    identity and report data before returning the existing result without new
+                    inference or execution.
+                  </p>
+                </div>
+              </li>
+            </ol>
+            <figure class="project-figure">
+              <a
+                href="/images/failurelab-experiment.png"
+                data-lightbox
+                data-caption="FailureLab: actual repository screenshot of its controlled browser experiment workspace."
+                aria-label="Enlarge FailureLab experiment screenshot"
+                ><img
+                  src="/images/failurelab-experiment.png"
+                  alt="FailureLab investigation workspace showing baseline and intervention evidence and an experimental finding."
+                  width="1512"
+                  height="1439"
+                  loading="lazy"
+                  decoding="async"
+                /><span class="image-expand" aria-hidden="true">↗</span></a
+              >
+              <figcaption>
+                <span>Actual application capture · authored development incident</span
+                ><span>Click to inspect ↗</span>
+              </figcaption>
+            </figure>
+            <div class="case-grid">
+              <div>
+                <h5>Constrain execution</h5>
+                <p>
+                  The local runner accepts application-owned fixtures. Imported repositories require
+                  an authenticated Linux runner, a reviewed manifest, and a disposable VM. Models
+                  select typed actions; they cannot provide arbitrary shell commands. Provider
+                  failures stop the workflow and consume the persistent call budget.
+                </p>
+              </div>
+              <div>
+                <h5>Validation &amp; current scope</h5>
+                <p>
+                  Tests exercise API contracts, live browser behavior, replay, crash recovery,
+                  security boundaries, and release gates. An authored GitHub incident completed a
+                  real Linux experiment. The v0.1.2 release gate remains incomplete following
+                  provider availability failures; deployment smoke testing and human review remain
+                  outstanding.
+                </p>
+              </div>
+            </div>
+            <div class="case-callout">
+              <span class="mono">WHAT THE RESULT MEANS</span>
+              <p>
+                A supported result applies to the tested mechanism in the recorded environment. The
+                authored fixtures check system behavior; production diagnostic accuracy remains
+                unmeasured. Reports preserve unsuccessful attempts and identify missing evidence.
+              </p>
+            </div>
+            <div class="development-notes">
+              <h5>What I’m developing next</h5>
+              <div class="development-grid">
+                <div>
+                  <span class="state-label mono">IN DEVELOPMENT</span>
+                  <h6>Agentic investigation</h6>
+                  <p>
+                    I’m expanding the automated investigation workflow. The current code has
+                    separate diagnosis and planning stages with typed outputs and executable
+                    verification. The broader workflow remains in development; the live provider
+                    acceptance gate, deployment checks, and human review are still outstanding.
+                  </p>
+                </div>
+                <div>
+                  <span class="state-label state-future mono">FUTURE</span>
+                  <h6>Broader validation</h6>
+                  <p>
+                    The documented next step is to evaluate independent incidents with a frozen
+                    holdout. Optional neural retrieval and deployment adapters also need measured
+                    acceptance before making claims about their benefits.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="case-links">
+              <a
+                class="text-link"
+                href="https://github.com/MJA0211/failurelab"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Explore the repository <span aria-hidden="true">↗</span></a
+              ><a
+                class="text-link"
+                href="/documents/failurelab-architecture.md"
+                target="_blank"
+                rel="noopener"
+                >Read the architecture notes <span aria-hidden="true">↗</span></a
+              >
+            </div>
+          </div>
+        </details>
+        <details class="case-study" id="eicc-case-study">
+          <summary>
+            <h3 class="summary-label">
+              <span class="study-name">EICC</span
+              ><span class="summary-hint">Contracts, testing & release decisions</span>
+            </h3>
+            <span class="expand-icon" aria-hidden="true">+</span>
+          </summary>
+          <div class="case-content">
+            <figure class="project-figure">
+              <a
+                class="eicc-screenshot"
+                href="/images/eicc-dashboard.png"
+                data-lightbox
+                data-caption="EICC: real repository screenshot of the fictional Northstar project, with readiness derived from persisted evidence."
+                aria-label="EICC / Integration workspace: enlarge dashboard screenshot"
+                ><div class="screenshot-chrome">
+                  <span class="window-dots" aria-hidden="true"><i></i><i></i><i></i></span
+                  ><span class="mono">EICC / INTEGRATION WORKSPACE</span
+                  ><span aria-hidden="true">↗</span>
+                </div>
+                <img
+                  src="/images/eicc-dashboard.png"
+                  alt="EICC dark dashboard displaying requirements coverage, integration tests, critical defects, and release readiness for the fictional Northstar project."
+                  width="1600"
+                  height="900"
+                  loading="lazy"
+                  decoding="async"
+              /></a>
+              <figcaption>Actual EICC workspace. The Northstar scenario is fictional.</figcaption>
+            </figure>
+            <div class="case-opening">
+              <p class="implemented-tag">IMPLEMENTED</p>
+              <p class="eyebrow">EICC / ENGINEERING NOTES</p>
+              <h4>Tracking requirements through integration and release</h4>
+              <p>
+                The fictional Northstar modernization scenario spans intake, legacy records,
+                documents, notifications, identity, reporting, and a partner gateway. EICC makes the
+                relationships between those systems and their delivery evidence inspectable.
+              </p>
+            </div>
+            <div class="case-grid">
+              <div>
+                <h5>The problem</h5>
+                <p>
+                  An interface change can invalidate a test, a stakeholder approval, and a release
+                  decision. A dashboard needs to derive readiness from the current contract and its
+                  evidence, while retaining the history of what was tested.
+                </p>
+              </div>
+              <div>
+                <h5>A modular monolith</h5>
+                <p>
+                  A React and TypeScript workspace calls FastAPI through Nginx or the Vite
+                  development proxy. Pydantic validates contracts; domain services own transitions;
+                  SQLAlchemy and Alembic manage relational storage. Docker Compose defines the
+                  PostgreSQL deployment; SQLite supports local development.
+                </p>
+              </div>
+              <div>
+                <h5>Model the relationships</h5>
+                <p>
+                  A common artifact identity and seventeen joined subtype tables connect
+                  requirements, integrations, tests, defects, changes, UAT, and releases. Foreign
+                  keys preserve actual relationships. Graph queries compute traceability, impact,
+                  and release scope from stored records.
+                </p>
+              </div>
+              <div>
+                <h5>Execute the contract</h5>
+                <p>
+                  The runner sends HTTP requests through a fixed in-process transport to REST/JSON
+                  and SOAP/XML simulators. It captures request and response evidence for schema
+                  mismatches, rejected authentication, timeouts, mapping errors, and downstream
+                  faults.
+                </p>
+              </div>
+            </div>
+            <div class="case-callout">
+              <span class="mono">WHEN A CONTRACT CHANGES</span>
+              <p>
+                Each execution stores a fingerprint of its test and interface contract. Change a
+                mapping, and the earlier pass becomes stale. UAT approvals also depend on the
+                current criteria and evidence. The server rechecks release gates and rejects stale
+                approval when the contract changes.
+              </p>
+            </div>
+            <div class="case-grid">
+              <div>
+                <h5>Workflow integrity</h5>
+                <p>
+                  Role checks, opaque cookie sessions, CSRF protection, optimistic revisions, and
+                  explicit state transitions protect writes. Execution evidence and generated
+                  Markdown document snapshots are immutable through the API. Updates and audit
+                  events commit together.
+                </p>
+              </div>
+              <div>
+                <h5>Verification &amp; outcome</h5>
+                <p>
+                  Backend, migration, security, and Playwright suites cover the
+                  requirements-to-release workflow. The recorded demonstration follows a SOAP
+                  failure through correction, retest, UAT, and release completion. Everything runs
+                  against a fictional local scenario; a release transition records a decision
+                  without deploying external software. EICC has no AI approval path.
+                </p>
+              </div>
+            </div>
+            <div class="development-notes">
+              <h5>What I’m developing next</h5>
+              <div class="development-grid">
+                <div>
+                  <span class="state-label mono">IN DEVELOPMENT</span>
+                  <h6>Enterprise workflow development</h6>
+                  <p>
+                    I’m continuing to develop EICC around its existing requirements, integration,
+                    and delivery workflows. The current implementation is the foundation for that
+                    work; further capabilities are still being defined.
+                  </p>
+                </div>
+                <div>
+                  <span class="state-label state-future mono">FUTURE</span>
+                  <h6>Scope to be defined</h6>
+                  <p>
+                    The repository does not commit to a specific next feature set. Future work will
+                    be documented as its scope is settled. Real enterprise integration and
+                    deployment remain outside the demonstrated scope.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="case-links">
+              <a
+                class="text-link"
+                href="/documents/eicc-architecture.md"
+                target="_blank"
+                rel="noopener"
+                >Read the architecture notes <span aria-hidden="true">↗</span></a
+              ><a
+                class="text-link"
+                href="/images/eicc-dashboard.png"
+                data-lightbox
+                data-caption="EICC: real repository screenshot of the fictional Northstar integration workspace."
+                >Inspect the application <span aria-hidden="true">↗</span></a
+              >
+            </div>
+          </div>
+        </details>
+      </section>
+      <section id="about" class="about wrap" aria-labelledby="about-title">
+        <div class="about-intro">
+          <div>
+            <p class="eyebrow"><span class="section-number">02 /</span> About me</p>
+            <h2 id="about-title">
+              I’m interested in<br /><span class="muted">the whole system.</span>
+            </h2>
+          </div>
+          <div class="about-copy">
+            <p>
+              I’m Muhammed, a Computer Science graduate from the University of Maryland. I’m
+              interested in software engineering and in using AI and machine learning in practical
+              applications.
+            </p>
+            <p>
+              My projects take me from data processing and model evaluation through backend services
+              and the interface. I like having enough context to follow a result back through the
+              system, especially when it fails. I’m continuing to develop these projects as I work
+              through their limitations.
+            </p>
+            <div class="education">
+              <svg class="icon" aria-hidden="true"><use href="#icon-education" /></svg>
+              <div>
+                <span class="mono">EDUCATION</span>
+                <h3>University of Maryland</h3>
+                <p>Bachelor’s Degree in Computer Science</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="stack">
+          <div class="stack-heading">
+            <h3>Tools I build with</h3>
+            <p>Technologies used across these projects.</p>
+          </div>
+          <dl class="stack-grid">
+            <div>
+              <dt>Languages</dt>
+              <dd>Python <span>/</span> TypeScript <span>/</span> JavaScript <span>/</span> SQL</dd>
+            </div>
+            <div>
+              <dt>AI &amp; machine learning</dt>
+              <dd>
+                scikit-learn <span>/</span> River <span>/</span> LangGraph <span>/</span> pandas
+                <span>/</span> NumPy
+              </dd>
+            </div>
+            <div>
+              <dt>Backend &amp; data</dt>
+              <dd>
+                FastAPI <span>/</span> Pydantic <span>/</span> SQLAlchemy <span>/</span> PostgreSQL
+                <span>/</span> SQLite
+              </dd>
+            </div>
+            <div>
+              <dt>Frontend</dt>
+              <dd>React <span>/</span> TypeScript <span>/</span> Vite <span>/</span> CSS</dd>
+            </div>
+            <div>
+              <dt>Infrastructure</dt>
+              <dd>
+                Docker <span>/</span> Nginx <span>/</span> GitHub Actions <span>/</span> Alembic
+              </dd>
+            </div>
+            <div>
+              <dt>Quality &amp; developer tools</dt>
+              <dd>
+                Playwright <span>/</span> pytest <span>/</span> Git <span>/</span> Ruff
+                <span>/</span> Mypy
+              </dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+      <section class="principles wrap" aria-labelledby="principles-title">
+        <div class="principles-heading">
+          <p class="eyebrow"><span class="section-number">03 /</span> Engineering approach</p>
+          <h2 id="principles-title">How I approach the work</h2>
+        </div>
+        <div class="principle-grid">
+          <div>
+            <svg class="icon" aria-hidden="true"><use href="#icon-shield" /></svg>
+            <h3>Validate before trusting.</h3>
+            <p>
+              A dataset can pass a schema check and still lack permission for training. AutoValue
+              checks both before using it.
+            </p>
+            <span class="mono">AUTOVALUE AI → GOVERNED DATA</span>
+          </div>
+          <div>
+            <svg class="icon" aria-hidden="true"><use href="#icon-branch" /></svg>
+            <h3>Make failure inspectable.</h3>
+            <p>
+              FailureLab retains logs, screenshots, and checkpoints so the result can be reviewed
+              against what ran.
+            </p>
+            <span class="mono">FAILURELAB → RETAINED EVIDENCE</span>
+          </div>
+          <div>
+            <svg class="icon" aria-hidden="true"><use href="#icon-layers" /></svg>
+            <h3>Connect the whole workflow.</h3>
+            <p>
+              In EICC, a changed contract can invalidate an earlier test pass. The release decision
+              needs to reflect that change.
+            </p>
+            <span class="mono">EICC → TRACEABLE RELEASES</span>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="contact wrap" aria-labelledby="contact-title">
+        <div>
+          <h2 id="contact-title">Let’s build something.</h2>
+          <p>
+            I’m interested in software engineering and AI/ML opportunities. If my work is relevant
+            to a problem you’re tackling, get in touch.
+          </p>
+        </div>
+        <div class="contact-list" aria-label="Contact Muhammed Awwad">{{contacts:rows}}</div>
+      </section>
+    </main>
+    <footer class="site-footer wrap">
+      <span>© 2026 Muhammed Awwad</span><span>Computer Science · Software Engineering · AI/ML</span
+      ><a href="#home">Back to top ↑</a>
+    </footer>
+    <dialog class="image-dialog" id="image-dialog" aria-labelledby="image-caption">
+      <div class="dialog-toolbar">
+        <span class="mono">APPLICATION / DETAIL VIEW</span
+        ><button class="dialog-close" type="button" aria-label="Close screenshot">
+          Close <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="dialog-image-wrap" tabindex="0" role="region" aria-label="Scrollable screenshot">
+        <img id="dialog-image" alt="" />
+      </div>
+      <p id="image-caption"></p>
+    </dialog>
+    <svg xmlns="http://www.w3.org/2000/svg" class="icon-sprite" aria-hidden="true">
+      <defs>
+        <symbol id="icon-github" viewBox="0 0 24 24">
+          <path
+            d="M9 19c-4 1-4-2-6-2m12 5v-4a3.5 3.5 0 0 0-1-3c3 0 6-1.5 6-6a5 5 0 0 0-1.5-3.5A5 5 0 0 0 18.4 2S17.2 1.6 14.5 3a13 13 0 0 0-5 0C6.8 1.6 5.6 2 5.6 2a5 5 0 0 0-.1 3.5A5 5 0 0 0 4 9c0 4.5 3 6 6 6a3.5 3.5 0 0 0-1 3v4"
+          />
+        </symbol>
+        <symbol id="icon-window" viewBox="0 0 24 24">
+          <rect x="3" y="4" width="18" height="16" rx="2" />
+          <path d="M3 9h18M7 6.5h.01M10 6.5h.01" />
+        </symbol>
+        <symbol id="icon-braces" viewBox="0 0 24 24">
+          <path
+            d="M8 3H6a2 2 0 0 0-2 2v4l-2 3 2 3v4a2 2 0 0 0 2 2h2m8-18h2a2 2 0 0 1 2 2v4l2 3-2 3v4a2 2 0 0 1-2 2h-2M10 12h4"
+          />
+        </symbol>
+        <symbol id="icon-chart" viewBox="0 0 24 24">
+          <path d="M4 3v17h17M8 15v-4m5 4V7m5 8V5" />
+        </symbol>
+        <symbol id="icon-shield" viewBox="0 0 24 24">
+          <path d="m12 3 8 3v6c0 5-8 9-8 9s-8-4-8-9V6l8-3Z" />
+          <path d="m8.5 12 2.5 2.5 4.5-5" />
+        </symbol>
+        <symbol id="icon-database" viewBox="0 0 24 24">
+          <ellipse cx="12" cy="5" rx="8" ry="3" />
+          <path d="M4 5v14c0 4 16 4 16 0V5M4 12c0 4 16 4 16 0" />
+        </symbol>
+        <symbol id="icon-filter" viewBox="0 0 24 24">
+          <path d="M3 5h18l-7 8v6l-4 2v-8L3 5Z" />
+        </symbol>
+        <symbol id="icon-wave" viewBox="0 0 24 24"><path d="M2 12h4l3-8 6 16 3-8h4" /></symbol>
+        <symbol id="icon-branch" viewBox="0 0 24 24">
+          <circle cx="6" cy="5" r="2" />
+          <circle cx="6" cy="19" r="2" />
+          <circle cx="18" cy="5" r="2" />
+          <path d="M6 7v10m12-10v2c0 5-12 2-12 8" />
+        </symbol>
+        <symbol id="icon-file" viewBox="0 0 24 24">
+          <path d="M14 2H5v20h14V7l-5-5Zm0 0v6h5M8 12h8M8 16h6" />
+        </symbol>
+        <symbol id="icon-education" viewBox="0 0 24 24">
+          <path d="m2 8 10-5 10 5-10 5L2 8Zm4 3v6c4 3 8 3 12 0v-6m4-3v8" />
+        </symbol>
+        <symbol id="icon-layers" viewBox="0 0 24 24">
+          <path d="m12 3 10 5-10 5L2 8l10-5ZM2 12l10 5 10-5M2 16l10 5 10-5" />
+        </symbol>
+      </defs>
+    </svg>
+  </body>
+</html>

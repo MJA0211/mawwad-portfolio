@@ -1,0 +1,61 @@
+@font-face {
+  font-family: Mono;
+  src: url('/fonts/ibm-plex-mono-latin.woff2');
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  color-scheme: dark;
+}
+body {
+  margin: 0;
+  background: #0b0e12;
+  color: #c8d0db;
+  font:
+    14px/1.9 Mono,
+    monospace;
+}
+.wrap {
+  width: calc(100% - 40px);
+  max-width: 850px;
+  margin: auto;
+  padding: 40px 0;
+}
+h1 {
+  font-size: clamp(23px, 4vw, 30px);
+  line-height: 1.5;
+  color: #e2e9f1;
+  margin: 24px 0 16px;
+}
+a {
+  color: #39d9bf;
+  text-decoration: none;
+  display: inline-block;
+  padding: 12px 0;
+}
+a:hover {
+  color: #f0bd80;
+}
+:focus-visible {
+  outline: 2px solid #f0bd80;
+  outline-offset: 5px;
+}
+ol {
+  padding: 0;
+  list-style: none;
+  margin: 25px 0;
+}
+li {
+  border-top: 1px solid #2a3542;
+  padding: 17px 0;
+}
+li p {
+  margin: 0;
+}
+time {
+  display: block;
+  color: #39d9bf;
+  font-size: 12px;
+  margin-bottom: 8px;
+}

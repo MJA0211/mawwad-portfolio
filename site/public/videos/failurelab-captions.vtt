@@ -1,0 +1,25 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:04.700
+The investigation list contains four owned incidents, including one with insufficient evidence.
+
+2
+00:00:04.700 --> 00:00:09.200
+An investigation finds that an overlay intercepts a checkout click. The hypothesis links to retained logs, DOM evidence, and a source diff.
+
+3
+00:00:09.200 --> 00:00:13.800
+The evidence view opens the source log that records intercepted pointer events.
+
+4
+00:00:13.800 --> 00:00:18.300
+The experiment compares three failing baseline runs with three passing intervention runs after removing the overlay.
+
+5
+00:00:18.300 --> 00:00:23.000
+The reviewer records that support is limited to this owned fixture, then saves the note.
+
+6
+00:00:23.000 --> 00:00:27.560
+A separate incident lacks diagnostic artifacts. Its result remains inconclusive and no experiment is reported.

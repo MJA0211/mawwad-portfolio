@@ -1,0 +1,23 @@
+node_modules/
+dist/
+test-results/
+playwright-report/
+.local/
+.wrangler/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.tsbuildinfo
+
+# Private resumes and job applications are not website source.
+resume/
+
+# Reference repositories are separate applications, not portfolio source.
+project1/
+project 2/
+EICC PROJECT/
+failurelab/

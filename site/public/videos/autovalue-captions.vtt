@@ -1,0 +1,21 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:12.000
+The valuation screen introduces AutoValue AI and its use of historical vehicle data.
+
+2
+00:00:12.000 --> 00:00:43.000
+The vehicle form contains model year, status, make, model, mileage, and a prediction interval. The recording selects an example and edits its details.
+
+3
+00:00:43.000 --> 00:01:10.000
+Submitting example vehicles returns historical asking-price estimates and calibrated intervals. The result identifies RF05 and the 2023 asking-price target.
+
+4
+00:01:10.000 --> 00:01:27.000
+The recording opens the ML engineering dashboard, which describes the frozen model and its evaluation.
+
+5
+00:01:27.000 --> 00:01:45.366
+The dashboard shows interval coverage, system architecture, and experiment history. River online learning is shown as separate shadow research.

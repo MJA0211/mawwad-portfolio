@@ -2,7 +2,7 @@
 
 The portfolio describes the source supplied in this workspace. Existing project applications were inspected without changing their implementation. Earlier design documents sometimes describe planned features that later code implements; the current code and newer verification records take precedence.
 
-The user identified all projects as active work in progress and confirmed ongoing agentic development for AutoValue AI and FailureLab. The user also supplied the name, University of Maryland Computer Science degree, email, and LinkedIn URL. GitHub links were taken from actual repository remotes and checked publicly.
+The user identified all projects as active work in progress and confirmed ongoing agentic development for AutoValue AI and FailureLab. Muhammed supplied his name, University of Maryland Global Campus Computer Science degree, email, and LinkedIn URL. GitHub links were taken from actual repository remotes and checked publicly.
 
 ## AutoValue AI
 
@@ -40,7 +40,7 @@ The site distinguishes implemented agent stages from the user's ongoing work on 
 
 ## EICC
 
-Local reference: `EICC PROJECT/` (kept outside this repository). Remote: https://github.com/MJA0211/eicc. Access follows the repository's GitHub visibility settings.
+Local reference: `EICC PROJECT/` (kept outside this repository). Remote: https://github.com/MJA0211/eicc. The portfolio links to the repository and includes a local recording.
 
 | Portfolio claim                                           | Implementation evidence                                                |
 | --------------------------------------------------------- | ---------------------------------------------------------------------- |
@@ -59,7 +59,7 @@ The user confirmed ongoing EICC development. Its documentation does not define a
 
 ## Copy and assets
 
-The requested [Humanizer skill](https://github.com/blader/humanizer) was used to review the writing. The pass removed staged taglines, repetitive fragments, and unsupported emphasis. Technical constraints and the implemented/development/future distinctions were retained.
+Copy was reviewed with [Humanizer](https://github.com/blader/humanizer) and [Stop Slop](https://github.com/hardikpandya/stop-slop). The edits cut repeated descriptions and vague claims while preserving technical details and project status.
 
 The site uses original HTML/CSS diagrams. They describe the architecture and do not simulate runtime status, measurements, or project execution. Screenshots are copied directly from the repositories. Only public-facing screenshots and notes enter the site; `.env`, runtime databases, raw datasets, checkpoints, and estimator artifacts do not.
 

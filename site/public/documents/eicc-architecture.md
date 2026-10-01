@@ -18,7 +18,7 @@ Backend tests cover workflow rules, authentication, evidence, protocol simulator
 
 ## In development
 
-Muhammed continues to develop the enterprise workflow around this architecture. Additional capabilities are still being defined.
+Work continues on the requirements, integration, and release workflows. The next feature scope is still open.
 
 ## Future
 
@@ -26,7 +26,7 @@ The repository does not commit to a specific next feature set. Real enterprise i
 
 ## Source files reviewed
 
-These notes summarize the local EICC repository:
+Source: [MJA0211/eicc](https://github.com/MJA0211/eicc).
 
 - `README.md`, `docs/architecture.md`, `docs/implementation-plan.md`
 - `backend/models.py`, `backend/services.py`, `backend/graph.py`

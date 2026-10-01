@@ -1,10 +1,10 @@
 # Muhammed Awwad's portfolio
 
-A static portfolio for AutoValue AI, FailureLab, and EICC. All three are presented as active engineering projects. The case studies distinguish implemented behavior, work in development, and future direction.
+My portfolio for AutoValue AI, FailureLab, and EICC. All three projects are in development. Each has a recorded demo and notes on its implementation, tests, and remaining work.
 
 Website: [mawwad.dev](https://mawwad.dev). Source: [MJA0211/mawwad-portfolio](https://github.com/MJA0211/mawwad-portfolio).
 
-The site uses a centered introduction, monospace typography, teal waveform background, and three project panels inspired by the supplied reference. Each project has a recorded demo with native playback and fullscreen controls, optional text descriptions, and a text walkthrough.
+The page has a centered introduction, monospace text, a teal waveform background, and a panel for each project. Each project has a recorded demo with native playback and fullscreen controls, optional text descriptions, and a text walkthrough.
 
 HTML and CSS provide the page, with a small TypeScript module for architecture tabs, screenshot dialogs, section navigation, case-study deep links, and pausing other videos when playback starts. Vite builds the static output. Main content, videos, and native case-study disclosures also work without JavaScript.
 
@@ -29,6 +29,9 @@ The production preview is at http://127.0.0.1:4173. Deploy only `dist/` to a sta
 
 ## Editing
 
+Only the owner has write access to this repository. Visitors can fork it and
+propose a change through a pull request; merging requires the owner's review.
+
 - `site/index.html`: website copy, project descriptions, status labels, diagrams, and case studies.
 - `site/styles.css`: layout, typography, responsive styles, and reduced-motion behavior.
 - `site/main.ts`: interactive enhancements.
@@ -40,7 +43,7 @@ The production preview is at http://127.0.0.1:4173. Deploy only `dist/` to a sta
 
 The portfolio is live at [mawwad.dev](https://mawwad.dev) and [www.mawwad.dev](https://www.mawwad.dev), with valid HTTPS certificates. GoDaddy handles domain registration; Cloudflare Workers hosts the site. Live checks verified playback and seeking for all three videos, descriptions, text walkthroughs, contact links, and desktop/mobile layout. Use `npm run deploy` to publish future changes. See [the deployment guide](docs/deployment.md) for the setup.
 
-Restart the dev server after editing `portfolio.config.ts`. Run `node scripts/generate-social.mjs` to regenerate the social image after editing its source. The script draws the portfolio title and project names; it does not fabricate a project screenshot.
+Restart the dev server after editing `portfolio.config.ts`. Run `node scripts/generate-social.mjs` to regenerate the social image after editing its source. The script draws the portfolio title and project names.
 
 Run `node scripts/optimize-posters.mjs` to regenerate video previews from the supplied recordings and EICC screenshot. It resizes them to at most 800 pixels wide and encodes WebP. The recordings and original screenshots remain unchanged.
 
@@ -58,8 +61,8 @@ With a production preview already running, use `node scripts/lighthouse.mjs` for
 
 ## Content sources
 
-The implementation review is recorded in `docs/project-evidence.md`. Claims come from project source code, documentation, and the user's identity and development-status updates. EICC is maintained separately in [MJA0211/eicc](https://github.com/MJA0211/eicc); its portfolio section includes local architecture notes and a real application screenshot. Repository access follows its GitHub visibility settings.
+The implementation review is recorded in `docs/project-evidence.md`. Project descriptions come from the source code and documentation, with development status supplied by Muhammed Awwad. EICC is maintained in [MJA0211/eicc](https://github.com/MJA0211/eicc). Its portfolio section links to the source, architecture notes, and an application screenshot.
 
 Local resumes, job applications, environment files, build output, and the separate project source directories are excluded from this repository.
 
-Visual research used [thavlik.dev](https://thavlik.dev/), following the user's request to match its layout and visual style. The implementation, waveform drawing, diagrams, and copy are original. Website prose was reviewed with the requested [Humanizer skill](https://github.com/blader/humanizer).
+The layout takes inspiration from [thavlik.dev](https://thavlik.dev/). The implementation, waveform drawing, diagrams, and copy are original. I used [Humanizer](https://github.com/blader/humanizer) and [Stop Slop](https://github.com/hardikpandya/stop-slop) to edit the writing.

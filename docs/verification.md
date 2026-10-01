@@ -54,3 +54,15 @@ Both `https://mawwad.dev` and `https://www.mawwad.dev` returned the portfolio wi
 `cloudflare/worker.mjs` now streams requested portions of the three recordings. The build records their exact file sizes because the internal ASSETS binding omits Content-Length. Eleven server regression checks passed, including suffix ranges against the actual built recordings. All eight browser video tests passed against the local Cloudflare runtime, including seeking and fullscreen. Build, lint, and Wrangler's deployment dry run passed. The deployed Worker version is `7d4c1620-0e39-4dee-819b-d502e61c16bf`.
 
 Live results are saved in `.local/mawwad-live-verification.json` and `.local/www-live-verification.json`. Local Lighthouse results above remain local measurements and are not presented as scores for the public host.
+
+## AutoValue recording and education update, October 1, 2026
+
+Replaced AutoValue AI's recording with a 97.001-second, 1600 × 1000 H.264 walkthrough. The 2,768,962-byte MP4 has twelve chapter markers, captions embedded below the application, a WebVTT track, and an HTML walkthrough. Its poster is a frame from the new recording. FFmpeg decoded the complete video without errors; the opening, estimate, holdout, experiment, and replay frames were inspected.
+
+The capture used the actual local React application and FastAPI service with verified RF05 artifacts and a separate SQLite history database. Checks confirmed successful inference, a wider 95% interval with the same point estimate, three saved estimates, and a completed synthetic River replay. No browser or HTTP errors were observed during capture. The raw video and capture report remain in `.local/autovalue-demo-2026-10-01/`.
+
+The education heading, introduction, hero label, and page description now use the user's requested name, University of Maryland. Humanizer and Stop Slop guided the new captions and walkthrough text.
+
+`npm run lint`, `npm run build`, all 23 Playwright tests, and all 11 Worker tests passed. The browser suite checked video playback, midpoint seeking, captions, fullscreen, accessible walkthroughs, and layouts from 375 to 1440 pixels.
+
+Published to Worker version `7c83b3dd-360b-4492-b8c0-5e7e5c82fbb0`. Both `https://mawwad.dev` and `https://www.mawwad.dev` served HTML matching the local build and an AutoValue MP4 matching its SHA-256 digest. Both pages contain the updated education text. Range requests returned HTTP 206 with the exact requested bytes and the new video size. Live Chromium checks verified all three videos played and sought successfully, all description tracks and walkthroughs loaded, and both desktop and mobile layouts fit without horizontal overflow. No page or asset errors were observed. Reports are saved as `live-apex.json` and `live-www.json` in the capture directory.

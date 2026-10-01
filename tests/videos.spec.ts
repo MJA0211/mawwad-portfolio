@@ -19,7 +19,7 @@ test('recordings wait for playback and have accessible alternatives', async ({ p
 });
 
 for (const [id, duration] of [
-  ['autovalue', 105.367],
+  ['autovalue', 97.001],
   ['failurelab', 27.56],
   ['eicc', 205.813],
 ] as const) {

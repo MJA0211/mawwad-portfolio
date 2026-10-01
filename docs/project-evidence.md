@@ -2,7 +2,7 @@
 
 The portfolio describes the source supplied in this workspace. Existing project applications were inspected without changing their implementation. Earlier design documents sometimes describe planned features that later code implements; the current code and newer verification records take precedence.
 
-The user identified all projects as active work in progress and confirmed ongoing agentic development for AutoValue AI and FailureLab. Muhammed supplied his name, University of Maryland Global Campus Computer Science degree, email, and LinkedIn URL. GitHub links were taken from actual repository remotes and checked publicly.
+The user identified all projects as active work in progress and confirmed ongoing agentic development for AutoValue AI and FailureLab. Muhammed supplied his name, education details, email, and LinkedIn URL. The portfolio uses his requested education label, University of Maryland. GitHub links were taken from actual repository remotes and checked publicly.
 
 ## AutoValue AI
 
@@ -63,16 +63,18 @@ Copy was reviewed with [Humanizer](https://github.com/blader/humanizer) and [Sto
 
 The site uses original HTML/CSS diagrams. They describe the architecture and do not simulate runtime status, measurements, or project execution. Screenshots are copied directly from the repositories. Only public-facing screenshots and notes enter the site; `.env`, runtime databases, raw datasets, checkpoints, and estimator artifacts do not.
 
-## Recorded demos added September 23, 2026
+## Recorded demos
 
-| Project      | Source                                                                                                                    | Verified browser duration | Portfolio file                            |
-| ------------ | ------------------------------------------------------------------------------------------------------------------------- | ------------------------- | ----------------------------------------- |
-| AutoValue AI | [Recording linked by the project README](https://github.com/user-attachments/assets/67b0460e-c3aa-4675-a5dd-2b3c03d8fade) | 105.367 seconds           | `site/public/videos/autovalue-demo.mp4`   |
-| FailureLab   | `failurelab/docs/walkthrough.webm`                                                                                        | 27.56 seconds             | `site/public/videos/failurelab-demo.webm` |
-| EICC         | `EICC PROJECT/docs/demo/eicc-walkthrough.mp4`                                                                             | 205.813 seconds           | `site/public/videos/eicc-demo.mp4`        |
+| Project      | Source                                                                                             | Verified browser duration | Portfolio file                            |
+| ------------ | -------------------------------------------------------------------------------------------------- | ------------------------- | ----------------------------------------- |
+| AutoValue AI | Local React/FastAPI application, captured October 1, 2026 with `scripts/record-autovalue-demo.mjs` | 97.001 seconds            | `site/public/videos/autovalue-demo.mp4`   |
+| FailureLab   | `failurelab/docs/walkthrough.webm`                                                                 | 27.56 seconds             | `site/public/videos/failurelab-demo.webm` |
+| EICC         | `EICC PROJECT/docs/demo/eicc-walkthrough.mp4`                                                      | 205.813 seconds           | `site/public/videos/eicc-demo.mp4`        |
 
-The recordings are retained as supplied. AutoValue AI and FailureLab video posters are actual frames captured from those recordings. The EICC poster comes from the existing application screenshot. Posters are resized to at most 800 pixels wide and encoded as WebP by `scripts/optimize-posters.mjs`. The separate screenshots in the engineering notes remain unchanged.
+The FailureLab and EICC recordings added September 23 are retained as supplied. AutoValue AI's October 1 recording replaces its earlier 105.367-second video. AutoValue AI and FailureLab posters are actual frames captured from their recordings. The EICC poster comes from the existing application screenshot. Posters are resized to at most 800 pixels wide and encoded as WebP by `scripts/optimize-posters.mjs`. The separate screenshots in the engineering notes remain unchanged.
 
-AutoValue's text descriptions were written after inspecting its valuation, result, and engineering-dashboard frames. FailureLab's walkthrough was checked against the recording and `scripts/record_walkthrough.py`; its scope is explicitly the deterministic baseline on owned fixtures. The EICC description track was copied from `docs/demo/eicc-captions.vtt`; its text walkthrough retains the same chapter information and fictional-scenario scope. Each recording has a separate accessible HTML walkthrough.
+AutoValue's new recording uses the verified local RF05 model and an isolated SQLite history database. It shows real API results for a 2020 Toyota Camry and a 2021 Honda CR-V, compares 90% and 95% intervals, and reviews saved estimates. The engineering segment shows holdout metrics, interval calibration, architecture, experiment decisions, and a synthetic River replay. The replay displays recorded research aggregates and does not update the serving model. Twelve chapter captions and the HTML walkthrough are generated from the capture timings by `scripts/package-autovalue-demo.py`. Private model artifacts and runtime databases remain outside the portfolio repository.
+
+FailureLab's walkthrough was checked against the recording and `scripts/record_walkthrough.py`; its scope is explicitly the deterministic baseline on owned fixtures. The EICC description track was copied from `docs/demo/eicc-captions.vtt`; its text walkthrough retains the same chapter information and fictional-scenario scope. Each recording has a separate accessible HTML walkthrough.
 
 Native browser controls provide playback, seeking, captions, and fullscreen. Recordings are served locally with `preload="none"`; automated checks confirm no MP4 or WebM request occurs before playback. When JavaScript is available, starting a recording pauses the others.

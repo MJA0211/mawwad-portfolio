@@ -14,44 +14,95 @@
       <a class="text-link" href="/#autovalue">← Back to AutoValue AI</a>
       <h1>AutoValue AI demo walkthrough</h1>
       <p>
-        This silent screen recording follows the valuation form and the model dashboard. The
-        application uses a private RF05 artifact to estimate historical 2023 U.S. asking prices. The
-        intervals describe model uncertainty; they are not live market quotes.
+        Recorded October 1, 2026. This silent, captioned recording follows real interactions with
+        the local application and its verified RF05 model. Estimates reflect historical 2023 U.S.
+        advertised asking prices. The River segment replays synthetic research results. AutoValue AI
+        remains in active development.
       </p>
       <a class="text-link" href="/videos/autovalue-demo.mp4">Open the recorded demo ↗</a>
       <ol>
         <li>
           <time>00:00</time>
           <p>
-            The valuation screen introduces AutoValue AI and its use of historical vehicle data.
+            AutoValue AI. A working prototype for historical 2023 U.S. asking-price estimates.
+            Recorded against the local API.
           </p>
         </li>
         <li>
-          <time>00:12</time>
+          <time>00:05</time>
           <p>
-            The vehicle form contains model year, status, make, model, mileage, and a prediction
-            interval. The recording selects an example and edits its details.
+            Enter a vehicle. Select a 2020 Toyota Camry with 48,000 miles and a 90% prediction
+            interval.
           </p>
         </li>
         <li>
-          <time>00:43</time>
+          <time>00:11</time>
           <p>
-            Submitting example vehicles returns historical asking-price estimates and calibrated
-            intervals. The result identifies RF05 and the 2023 asking-price target.
+            Estimate with RF05. The API returns a price estimate and a calibrated range. These are
+            historical asking prices.
           </p>
         </li>
         <li>
-          <time>01:10</time>
+          <time>00:19</time>
           <p>
-            The recording opens the ML engineering dashboard, which describes the frozen model and
-            its evaluation.
+            Compare interval coverage. Choose 95% coverage: the interval widens while the point
+            estimate stays the same.
           </p>
         </li>
         <li>
-          <time>01:27</time>
+          <time>00:29</time>
           <p>
-            The dashboard shows interval coverage, system architecture, and experiment history.
-            River online learning is shown as separate shadow research.
+            Try another vehicle. Estimate a certified 2021 Honda CR-V with 31,000 miles, using 90%
+            coverage.
+          </p>
+        </li>
+        <li>
+          <time>00:38</time>
+          <p>
+            Review saved estimates. The API saves these requests in browser-scoped SQLite history.
+            Three estimates are now listed.
+          </p>
+        </li>
+        <li>
+          <time>00:45</time>
+          <p>
+            Inspect the model. The engineering view identifies the frozen RF05 model and checks that
+            its serving artifacts are ready.
+          </p>
+        </li>
+        <li>
+          <time>00:51</time>
+          <p>
+            Read the holdout results. On 27,589 held-out observations, mean absolute error is
+            $10,575. The model has material limitations.
+          </p>
+        </li>
+        <li>
+          <time>01:00</time>
+          <p>
+            Check interval calibration. The nominal 90% interval reached 89.10% empirical coverage.
+            Wider intervals carry a cost in precision.
+          </p>
+        </li>
+        <li>
+          <time>01:08</time>
+          <p>
+            Follow the architecture. RF05 serves the estimate. River learning and external-source
+            experiments run in separate paths.
+          </p>
+        </li>
+        <li>
+          <time>01:16</time>
+          <p>
+            Review experiment decisions. The experiment log records accepted, rejected, and
+            research-only results.
+          </p>
+        </li>
+        <li>
+          <time>01:23</time>
+          <p>
+            Replay a synthetic shift. Replay 600 simulated mileage-shift events. This shows recorded
+            research results, separate from the serving model.
           </p>
         </li>
       </ol>

@@ -6,10 +6,11 @@ const browser = await chromium.launch();
 try {
   const page = await browser.newPage();
   for (const [id, source, mime, time] of [
-    ['autovalue', 'site/public/videos/autovalue-demo.mp4', 'video/mp4', 60],
+    ['autovalue', 'site/public/videos/autovalue-demo.mp4', 'video/mp4', 17.5],
     ['failurelab', 'site/public/videos/failurelab-demo.webm', 'video/webm', 17],
     ['eicc', 'site/public/images/eicc-dashboard.png', 'image/png', null],
   ]) {
+    if (process.argv.length > 2 && !process.argv.slice(2).includes(id)) continue;
     const bytes = await readFile(source);
     const encoded = await page.evaluate(
       async ({ data, mime, time }) => {

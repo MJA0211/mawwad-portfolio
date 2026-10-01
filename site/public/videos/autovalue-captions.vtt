@@ -1,21 +1,49 @@
 WEBVTT
 
 1
-00:00:00.000 --> 00:00:12.000
-The valuation screen introduces AutoValue AI and its use of historical vehicle data.
+00:00:00.000 --> 00:00:05.005
+AutoValue AI: A working prototype for historical 2023 U.S. asking-price estimates. Recorded against the local API.
 
 2
-00:00:12.000 --> 00:00:43.000
-The vehicle form contains model year, status, make, model, mileage, and a prediction interval. The recording selects an example and edits its details.
+00:00:05.005 --> 00:00:11.251
+Enter a vehicle: Select a 2020 Toyota Camry with 48,000 miles and a 90% prediction interval.
 
 3
-00:00:43.000 --> 00:01:10.000
-Submitting example vehicles returns historical asking-price estimates and calibrated intervals. The result identifies RF05 and the 2023 asking-price target.
+00:00:11.251 --> 00:00:19.981
+Estimate with RF05: The API returns a price estimate and a calibrated range. These are historical asking prices.
 
 4
-00:01:10.000 --> 00:01:27.000
-The recording opens the ML engineering dashboard, which describes the frozen model and its evaluation.
+00:00:19.981 --> 00:00:29.288
+Compare interval coverage: Choose 95% coverage: the interval widens while the point estimate stays the same.
 
 5
-00:01:27.000 --> 00:01:45.366
-The dashboard shows interval coverage, system architecture, and experiment history. River online learning is shown as separate shadow research.
+00:00:29.288 --> 00:00:38.630
+Try another vehicle: Estimate a certified 2021 Honda CR-V with 31,000 miles, using 90% coverage.
+
+6
+00:00:38.630 --> 00:00:45.843
+Review saved estimates: The API saves these requests in browser-scoped SQLite history. Three estimates are now listed.
+
+7
+00:00:45.843 --> 00:00:51.911
+Inspect the model: The engineering view identifies the frozen RF05 model and checks that its serving artifacts are ready.
+
+8
+00:00:51.911 --> 00:01:00.139
+Read the holdout results: On 27,589 held-out observations, mean absolute error is $10,575. The model has material limitations.
+
+9
+00:01:00.139 --> 00:01:08.360
+Check interval calibration: The nominal 90% interval reached 89.10% empirical coverage. Wider intervals carry a cost in precision.
+
+10
+00:01:08.360 --> 00:01:16.587
+Follow the architecture: RF05 serves the estimate. River learning and external-source experiments run in separate paths.
+
+11
+00:01:16.587 --> 00:01:23.807
+Review experiment decisions: The experiment log records accepted, rejected, and research-only results.
+
+12
+00:01:23.807 --> 00:01:37.001
+Replay a synthetic shift: Replay 600 simulated mileage-shift events. This shows recorded research results, separate from the serving model.
